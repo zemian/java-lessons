@@ -1,5 +1,7 @@
 // Lesson 2
-// Different types of data types in Java
+// Different types of data types in Java.
+// For the impatient: learn 4 types: int, double, boolean, and String, wrappers and null value.
+// 
 //
 // Further study:
 // - Explore the data range for each type
@@ -74,5 +76,11 @@ public class Lesson02_PrimitiveTypes {
         Integer intObj2 = 99; // Default to use Autoboxing
         Double doubleObj = 3.14;
         Integer[] intArray = {1, 2, 3};
+
+        // ## Null value for object
+        String obj1 = null;
+        Integer obj2 = null;
+        Double obj3 = null;
+        Object obj4 = null;
     }
 }
