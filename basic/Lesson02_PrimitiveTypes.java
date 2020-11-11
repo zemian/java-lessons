@@ -12,6 +12,14 @@
 // - Learn some of the common String function/methods you can use
 // - Learn that you can assign "null" value into Object like String or Integer!
 // - Learn more on java.util.Arrays class and it's methods
+//
+// Exercise:
+// 1. Find the min and max value of each data type range.
+// 2. What will happen if you increase int beyond it's max limit?
+// 3. Find at least 2 other operators that you can use on "int" types.
+// 4. Find a array size value that will start failing your program.
+// 5. Swap two elements in an array
+//
 public class Lesson02_PrimitiveTypes {
     public static void main(String[] args) {
         // # The 8 primitive types
@@ -42,6 +50,10 @@ public class Lesson02_PrimitiveTypes {
         System.out.println(numbers[1]);
         System.out.println(numbers[2]);
         System.out.println(numbers.length);
+
+        int[] bigArray = new int[10_000]; // Holds default value
+        System.out.println(bigArray[0]);
+        System.out.println(bigArray[bigArray.length - 1]);
 
         // ## Operators
         int sum = 99 + 1;
@@ -76,11 +88,23 @@ public class Lesson02_PrimitiveTypes {
         Integer intObj2 = 99; // Default to use Autoboxing
         Double doubleObj = 3.14;
         Integer[] intArray = {1, 2, 3};
+        System.out.println(intObj);
+        System.out.println(intObj2);
+        System.out.println(doubleObj);
+        System.out.println(intArray[0]);
 
         // ## Null value for object
         String obj1 = null;
         Integer obj2 = null;
         Double obj3 = null;
         Object obj4 = null;
+        System.out.println(obj1);
+        System.out.println(obj2);
+        System.out.println(obj3);
+        System.out.println(obj4);
+
+        // Array of String
+        String[] names = new String[10]; // Holds null values!
+        System.out.println(names[0]);
     }
 }

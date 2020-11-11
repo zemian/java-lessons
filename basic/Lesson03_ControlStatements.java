@@ -10,6 +10,12 @@
 //
 // Ref:
 // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html
+//
+// Exercise:
+// 1. Write a program that will convert string into Title string.
+// 2. Generate 10 random string with alpha numeric characters.
+// 3. Parse args for options (it should support --option=value syntax)
+//
 public class Lesson03_ControlStatements {
     public static void main(String[] args) {
         // Shortcut - increment/decrement operators
@@ -70,7 +76,7 @@ public class Lesson03_ControlStatements {
         // While Loop
         int counter = 0;
         while (counter < 3) {
-            System.out.println(counter);
+            System.out.println(Math.random()); // Print random decimal between 0.0 and 1.0
             counter++;
         }
     }

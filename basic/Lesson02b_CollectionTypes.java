@@ -11,6 +11,12 @@
 //     Map<String, Integer> map = new HashMap<>();
 // - Learn about immutable List.of(1, 2, 3)
 // - Learn about immutable Map.of("foo", 77, "bar", 88)
+//
+// Exercise:
+// 1. Process args and filter out ones starts with "-"
+// 2. Count letter frequency in a string
+// 3. Reverse a list elements
+//
 
 // You need to import the collection type classes first
 import java.util.ArrayList;

@@ -7,6 +7,13 @@
 // - Learn about StackOverFlow error by bad recursive function
 // - Learn about what makes function signature unique
 // - Notice the usage of "static" keyword on function
+//
+// Exercise:
+// 1. Write a fibonacci function that prints the number series
+// 2. Write a printArray() function
+// 3. Write a array sort() function
+// 4. Write a array shuffle() function
+//
 public class Lesson04_Functions {
     public static void main(String[] args) {
         printHi();
