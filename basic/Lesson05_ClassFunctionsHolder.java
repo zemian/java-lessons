@@ -1,4 +1,3 @@
-// Lesson 5
 // One usage of Class is to simply group functions together.
 //
 // Further study:

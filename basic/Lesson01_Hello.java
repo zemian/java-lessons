@@ -1,4 +1,3 @@
-// Lesson 1
 // Class Hello World Program in Java
 //
 // Further study:

@@ -1,4 +1,3 @@
-// Lesson 7
 // Class definition can extend other class so that we can reuse code more effectively
 //
 // Further study:

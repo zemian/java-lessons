@@ -1,13 +1,12 @@
 import java.util.Comparator;
 
-// Lesson 8
 // Just like lambda (function without name), Class can be also created without a name.
 // These are frequently used when you need a one time instance need.
 //
 // Further study:
 // - Learn how access modifier affect inner class.
 //
-public class Lesson10_AnonymousClass {
+public class Lesson12_AnonymousClass {
     public static void main(String[] args) {
         // Create an instance of a Runnable object (anonymous sub-class instance)
         Runnable task = new Runnable() {

@@ -1,4 +1,3 @@
-// Lesson 2
 // Let's jump start with two most common usage of Collection types: List and Map
 //
 // Further study:
@@ -22,7 +21,7 @@
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Lesson02b_CollectionTypes {
+public class Lesson02d_CollectionTypes {
     public static void main(String[] args) {
         listDemo();
         mapDemo();

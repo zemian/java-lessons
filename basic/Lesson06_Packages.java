@@ -1,4 +1,3 @@
-// Lesson 6
 // If class can hold functions, then think of package is used to hold classes.
 // Java packages use the file system structure to separate and store classes with
 // a namespace. See "Lesson06" folder for this lesson package definition used in

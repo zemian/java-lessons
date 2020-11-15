@@ -7,7 +7,7 @@
 // - See https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 // - Learn about Java Stream https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
 //
-public class Lesson04b_AnonymousFunctions {
+public class Lesson13_AnonymousFunctions {
     public static void main(String[] args) {
         // Creating a anonymous function/closure/lambda and pass into a caller
         doAction(() -> {

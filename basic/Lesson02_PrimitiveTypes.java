@@ -1,4 +1,3 @@
-// Lesson 2
 // Different types of data types in Java.
 // For the impatient: learn 4 types: int, double, boolean, and String, wrappers and null value.
 // 
@@ -67,44 +66,5 @@ public class Lesson02_PrimitiveTypes {
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
         System.out.println(n + 9 - i * d / 5);
         System.out.println(n + (9 - i) * d / 5);
-
-        // # Builtin String Object type
-        String str = "foo";
-        System.out.println(str);
-        System.out.println(str + " bar");
-        System.out.println(str + 3.14);
-        System.out.println(str.length()); // Use of "dot" operator here
-        System.out.println(str.substring(0, 2));
-        System.out.println(str.indexOf("o"));
-        char[] characters = str.toCharArray();
-        System.out.println(characters[0]);
-
-        String[] list = {"foo", "bar", "baz"};
-        System.out.println(list);
-        System.out.println(list[0]);
-
-        // ## Object wrapper for primitive types
-        Integer intObj = new Integer(99); // Redundant to use "new"
-        Integer intObj2 = 99; // Default to use Autoboxing
-        Double doubleObj = 3.14;
-        Integer[] intArray = {1, 2, 3};
-        System.out.println(intObj);
-        System.out.println(intObj2);
-        System.out.println(doubleObj);
-        System.out.println(intArray[0]);
-
-        // ## Null value for object
-        String obj1 = null;
-        Integer obj2 = null;
-        Double obj3 = null;
-        Object obj4 = null;
-        System.out.println(obj1);
-        System.out.println(obj2);
-        System.out.println(obj3);
-        System.out.println(obj4);
-
-        // Array of String
-        String[] names = new String[10]; // Holds null values!
-        System.out.println(names[0]);
     }
 }

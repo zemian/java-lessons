@@ -1,4 +1,3 @@
-// Lesson 3
 // A statement is a line of executable code.
 // We can control which statement(s) to execute and
 // which ones to skip over, or even repeat them.

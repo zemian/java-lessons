@@ -1,10 +1,10 @@
-// Lesson 6 - A real usage of Class to create custom user type and better organizing of your code.
-//            A custom class allow us to not just group functions together (also called methods)
-//            but we group them in such way that they are used to manipulate some member
-//            variables (data) inside the class. When you create a new instance (called object in
-//            general) from a Class, the instance will have their own copy of these member variables
-//            and hence hold "states" and values specific to a instance. Organizing your code this
-//            way is called Object Oriented design.
+// A real usage of Class to create custom user type and better organizing of your code.
+// A custom class allow us to not just group functions together (also called methods)
+// but we group them in such way that they are used to manipulate some member
+// variables (data) inside the class. When you create a new instance (called object in
+// general) from a Class, the instance will have their own copy of these member variables
+// and hence hold "states" and values specific to a instance. Organizing your code this
+// way is called Object Oriented design.
 //
 // Further study:
 // - Compare OO to functional programming design

@@ -1,4 +1,3 @@
-// Lesson 8
 // Java classes can have modifier keywords when defining them. These will affect
 // how other classes can access or inherit the members.
 //
