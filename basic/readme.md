@@ -2,9 +2,7 @@
 
 Learning basic Java Programming Language syntax. 
 
-It's highly recommended students to use just a plain text editor to write the code 
-in the lessons. Other fancy editors such IDE can be use for other lessons outside 
-of the basic kills.
+NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
 
 Java API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/index.html
 

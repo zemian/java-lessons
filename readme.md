@@ -16,6 +16,22 @@ cd basic
 javac *.java
 ```
 
+## Recommended Text Editors and IDEs
+
+NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
+
+Text Editors:
+
+* Sublime Text
+* Atom Editor
+* Notedpad++ for Windows
+
+Full IDEs:
+
+* JetBrains IDEA IntelliJ
+* Eclipse IDE for Java
+* Microsoft VSCode
+
 ## Reading List
 
 * https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
