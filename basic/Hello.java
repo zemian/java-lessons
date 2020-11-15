@@ -18,6 +18,14 @@
  * 3. Install/reinstall latest JDK software package.
  */
 public class Hello {
+    /*
+        # To compile it
+        cd basic
+        javac Hello.java
+
+        # To run it
+        java Hello
+     */
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }

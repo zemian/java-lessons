@@ -12,6 +12,8 @@
  * - Explore some basic operators you can use on each type
  * - Explore what happen when you mix types when using with operators
  * - Learn how to use good name on variable!
+ * - Array is fixed once created
+ * - Array can be self-nested (2d arrays)
  *
  * Exercise:
  * 1. Find the min and max value of each data type range.

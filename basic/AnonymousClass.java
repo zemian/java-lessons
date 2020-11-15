@@ -1,24 +1,48 @@
-import java.util.Comparator;
+/**
+ * We can create a new anonymous sub type and instantiate it at the same time!
+ *
+ * Main focus:
+ * - You can do this with any class type that you need subclass with.
+ * - This is often needed when we want to provide a quick instance of an interface.
+ * - The anonymous sub type assignment statement!
+ */
 
-// Just like lambda (function without name), Class can be also created without a name.
-// These are frequently used when you need a one time instance need.
-//
-// Further study:
-// - Learn how access modifier affect inner class.
-//
 public class AnonymousClass {
     public static void main(String[] args) {
+        //  Create a sub class of Car and override one of the method
+        Car truck = new Car("RED") {
+            public String getFancyColor() {
+                return "Fancy truck " + this.color;
+            }
+        };
+        System.out.println(truck.getFancyColor());
+
+        // Create anonymous instance of Engine interface
+        Engine engine = new Engine() {
+
+            @Override
+            public void start() {
+                System.out.println("Starting engine");
+            }
+
+            @Override
+            public void stop() {
+                System.out.println("Stopping engine");
+            }
+        };
+        engine.start();
+        engine.stop();
+
         // Create an instance of a Runnable object (anonymous sub-class instance)
         Runnable task = new Runnable() {
             public void run() {
                 System.out.println("I am inside a anonymous runnable class.");
             }
         };
-        // Now Use it
         task.run();
 
         // Another example by creating anonymous Comparator instance
-        Comparator<Integer> comp = new Comparator<>() {
+        java.util.Comparator<Integer> comp = new java.util.Comparator<>() {
             @Override
             public int compare(Integer a, Integer b) {
                 return b - a; // sort descending order
@@ -32,5 +56,20 @@ public class AnonymousClass {
         Integer[] numbers2 = {5, 6, 3, 8, 1, 2};
         java.util.Arrays.sort(numbers2, (a, b) -> b - a);
         System.out.println(java.util.Arrays.asList(numbers2));
+    }
+
+    public static class Car {
+        public String color;
+        public Car(String color) {
+            this.color = color;
+        }
+        public String getFancyColor() {
+            return "Fancy car " + this.color;
+        }
+    }
+
+    public interface Engine {
+        void start();
+        void stop();
     }
 }

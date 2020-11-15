@@ -25,6 +25,6 @@ public class AccessModifier {
 
         Truck truck = new Truck("Red", 10_000);
 //        System.out.println(truck.price); // ERROR - protected
-        System.out.println(truck.getTruckPrice());
+        System.out.println(truck.calculatePrice());
     }
 }

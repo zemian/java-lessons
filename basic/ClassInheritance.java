@@ -11,9 +11,6 @@
  *
  * Further study:
  * - A Class can only extend ONE parent class
- * - Explore Interface and "abstract class"
- * - Class can implements many Interface (empty class definition.)
- * - What is polymorphism: https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
  * - Learn what class encapsulation mean
  */
 public class ClassInheritance {

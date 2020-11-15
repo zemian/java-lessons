@@ -12,3 +12,7 @@ build/
 .settings/
 .project
 .classpath
+
+basic/*.class
+basic/**/*.class
+basic/*.jar

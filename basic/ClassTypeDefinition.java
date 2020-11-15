@@ -24,6 +24,7 @@
  * - Learn about java.lang.Object and it's methods
  * - Learn about member default value
  * - Learn what getter and setter methods are
+ * - What is polymorphism: https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
  */
 
 public class ClassTypeDefinition {
@@ -44,14 +45,21 @@ public class ClassTypeDefinition {
         System.out.println(numArray[1].byteValue());
         System.out.println(numArray[2].byteValue());
 
-        // Or you use their utility methods related to Integer
-        String binaryNum = Integer.toBinaryString(0xAB07);
-        System.out.println(binaryNum);
-
         // Now try custom class: Car
-        Car car = new Car("Red");
-        System.out.println(car.getDescription());
+        Car car = new Car();
+        System.out.println(car.color); // Access direct property
+        System.out.println(car.getDescription()); // Access method
 
+        // Create another instance of same type but hold different value
+        Car car2 = new Car("Red");
+        System.out.println(car2.getDescription());
+
+        // Use Getter and Setter
+        System.out.println(car.getColor());
+        car.setColor("GREEN");
+        System.out.println(car.getColor());
+
+        // We can create array of custom type as well
         Car[] cars = {new Car("Yellow"), new Car("Blue"), new Car("Green")};
         System.out.println(cars[0].getDescription());
         System.out.println(cars[1].getDescription());
@@ -62,6 +70,10 @@ public class ClassTypeDefinition {
         System.out.println(cars[0].getDescription()); // Changed!
         System.out.println(cars[1].getDescription()); // Unchanged
         System.out.println(cars[2].getDescription()); // Unchanged
+
+        // Use constant
+        Car car3 = new Car(Car.DEFAULT_COLOR);
+        System.out.println(car3);
     }
 
     // Class definition - keep in mind that you are writing the type declaration
@@ -70,6 +82,10 @@ public class ClassTypeDefinition {
         // Notice that we no longer use "static" keyword for the rest of the class definition!
         public String color;
 
+        // You can define constant
+        public static String DEFAULT_COLOR = "Gray";
+
+        // == Constructor methods to populate property
         // Default constructor
         public Car() {
         }
@@ -80,6 +96,7 @@ public class ClassTypeDefinition {
             this.color = color;
         }
 
+        // == Member methods to manipulate property
         public String getDescription() {
             return "My car color is " + this.color;
         }
@@ -88,6 +105,16 @@ public class ClassTypeDefinition {
             this.color = newColor;
         }
 
+        // == Better Member methods with Getter/Setter
+        public String getColor() {
+            return color;
+        }
+
+        public void setColor(String color) {
+            this.color = color;
+        }
+
+        // == Magic methods for System.out.println() to print nicely
         public String toString() {
             return "Car{" +
                     "color='" + color + '\'' +
