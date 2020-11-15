@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 /**
  * Enum is a special class type that use to defined strong type constants.
  *
@@ -8,6 +6,11 @@ import java.util.HashMap;
  * - Custom enum that we define our own data.
  * - You can not extends enum type!
  */
+
+import java.util.*;
+import enumtype.MyColor;
+import static enumtype.MyColor.*;
+
 public class EnumType {
     public static void main(String[] args) {
         // Using simple enum
@@ -52,6 +55,11 @@ public class EnumType {
         // Advance enum type
         CarType carType = CarType.HONDA_ACCORD;
         System.out.println(carType);
+
+        // Use enum without type prefix
+        // Note: you can't do this with default package enum, it must from a real package.
+        ArrayList<MyColor> myColors = new ArrayList<>(List.of(ORANGE, PURPLE));
+        System.out.println(myColors);
     }
 
     // Simple enum type
