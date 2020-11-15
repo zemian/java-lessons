@@ -6,7 +6,7 @@ import java.util.Comparator;
 // Further study:
 // - Learn how access modifier affect inner class.
 //
-public class Lesson12_AnonymousClass {
+public class AnonymousClass {
     public static void main(String[] args) {
         // Create an instance of a Runnable object (anonymous sub-class instance)
         Runnable task = new Runnable() {

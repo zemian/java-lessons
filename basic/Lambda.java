@@ -1,4 +1,3 @@
-// Lesson 4b
 // Java supports anonymous function (without name) and it's called Lambda.
 // You often use these to create a one time function usage that pass to other function
 // as argument.
@@ -7,7 +6,7 @@
 // - See https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 // - Learn about Java Stream https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
 //
-public class Lesson13_AnonymousFunctions {
+public class Lambda {
     public static void main(String[] args) {
         // Creating a anonymous function/closure/lambda and pass into a caller
         doAction(() -> {

@@ -1,21 +1,27 @@
-// A statement is a line of executable code.
-// We can control which statement(s) to execute and
-// which ones to skip over, or even repeat them.
-//
-// Further study:
-// - Learn about "switch" control statement (alternate to like if/elseif/else)
-// - Learn about "do-while" loop
-// - Learn about "continue" and "break" in loop
-//
-// Ref:
-// https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html
-//
-// Exercise:
-// 1. Write a program that will convert string into Title string.
-// 2. Generate 10 random string with alpha numeric characters.
-// 3. Parse args for options (it should support --option=value syntax)
-//
-public class Lesson03_ControlStatements {
+/**
+ * Control Statement
+ *
+ * Main focus:
+ * - Statement is a line of executable code.
+ * - Group of statements is called Block.
+ * - Control Statements are keyword that let you control which block of code to execute
+ *   under a certain condition.
+ * - Block of code can be repeated or skipped.
+ *
+ * Further study:
+ * - Learn about "switch" control statement (alternate to like if/elseif/else)
+ * - Learn about "do-while" loop
+ * - Learn about "continue" and "break" in loop
+ *
+ * More Ref:
+ * - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html
+ *
+ * Exercise:
+ * 1. Write a program that will convert string into Title string.
+ * 2. Generate 10 random string with alpha numeric characters.
+ * 3. Parse args for options (it should support --option=value syntax)
+ */
+public class ControlStatements {
     public static void main(String[] args) {
         // Shortcut - increment/decrement operators
         int n = 0;

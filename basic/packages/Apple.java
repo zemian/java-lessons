@@ -1,4 +1,4 @@
-package lesson06;
+package packages;
 
 // This class definition is inside the "package" named "lesson6".
 public class Apple {

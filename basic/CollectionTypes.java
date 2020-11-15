@@ -1,27 +1,35 @@
-// Let's jump start with two most common usage of Collection types: List and Map
-//
-// Further study:
-// - See more methods available for List at
-//   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
-// - See more methods available for Map at
-//   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
-// - Learn different syntax on creating List or Map:
-//     List<Integer> list = new ArrayList<>();
-//     Map<String, Integer> map = new HashMap<>();
-// - Learn about immutable List.of(1, 2, 3)
-// - Learn about immutable Map.of("foo", 77, "bar", 88)
-//
-// Exercise:
-// 1. Process args and filter out ones starts with "-"
-// 2. Count letter frequency in a string
-// 3. Reverse a list elements
-//
+
+/**
+ * Collection Types - like an array, a special type that act as data value container.
+ *
+ * Main focus:
+ * - Learn two most used types: ArrayList and HashMap.
+ * - Learn about generic type syntax with "Name<Type>" syntax.
+ * - ArrayList and HashMap can only work with wrapper type, not primitives.
+ *
+ * Further study:
+ * - See more methods available for List at
+ *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
+ * - See more methods available for Map at
+ *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
+ * - Learn different syntax on creating List or Map:
+ *     List<Integer> list = new ArrayList<>();
+ *     Map<String, Integer> map = new HashMap<>();
+ * - Learn about immutable List.of(1, 2, 3)
+ * - Learn about immutable Map.of("foo", 77, "bar", 88)
+ *
+ * Exercise:
+ * 1. Process args and filter out ones starts with "-"
+ * 2. Count letter frequency in a string
+ * 3. Reverse a list elements
+ *
+ */
 
 // You need to import the collection type classes first
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Lesson02d_CollectionTypes {
+public class CollectionTypes {
     public static void main(String[] args) {
         listDemo();
         mapDemo();

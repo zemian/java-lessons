@@ -1,25 +1,26 @@
-// Different types of data types in Java.
-// For the impatient: learn 4 types: int, double, boolean, and String, wrappers and null value.
-// 
-//
-// Further study:
-// - Explore the data range for each type
-// - Explore more operators you can use for each data type
-// - Explore some basic operators you can use on each type
-// - Explore what happen when you mix types when using with operators
-// - Learn how to use good name on variable!
-// - Learn some of the common String function/methods you can use
-// - Learn that you can assign "null" value into Object like String or Integer!
-// - Learn more on java.util.Arrays class and it's methods
-//
-// Exercise:
-// 1. Find the min and max value of each data type range.
-// 2. What will happen if you increase int beyond it's max limit?
-// 3. Find at least 2 other operators that you can use on "int" types.
-// 4. Find a array size value that will start failing your program.
-// 5. Swap two elements in an array
-//
-public class Lesson02_PrimitiveTypes {
+/**
+ * Java 8 primitive types
+ *
+ * Main focus:
+ * - There 4 main types: int, double, boolean, and String
+ * - Other 4 types are just more narrow or wider of the main type on the data range.
+ * - Each type can be group together using "array"
+ *
+ * Further study:
+ * - Explore the data range for each type
+ * - Explore more operators you can use for each data type
+ * - Explore some basic operators you can use on each type
+ * - Explore what happen when you mix types when using with operators
+ * - Learn how to use good name on variable!
+ *
+ * Exercise:
+ * 1. Find the min and max value of each data type range.
+ * 2. What will happen if you increase int beyond it's max limit?
+ * 3. Find at least 2 other operators that you can use on "int" types.
+ * 4. Find a array size value that will start failing your program.
+ * 5. Swap two elements in an array
+ */
+public class PrimitiveTypes {
     public static void main(String[] args) {
         // # The 8 primitive types
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html

@@ -1,4 +1,4 @@
-package lesson06.recipe;
+package packages.recipe;
 
 public class ApplePie {
     public static String howToCook() {

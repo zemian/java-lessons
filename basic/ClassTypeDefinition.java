@@ -1,20 +1,32 @@
-// A real usage of Class to create custom user type and better organizing of your code.
-// A custom class allow us to not just group functions together (also called methods)
-// but we group them in such way that they are used to manipulate some member
-// variables (data) inside the class. When you create a new instance (called object in
-// general) from a Class, the instance will have their own copy of these member variables
-// and hence hold "states" and values specific to a instance. Organizing your code this
-// way is called Object Oriented design.
-//
-// Further study:
-// - Compare OO to functional programming design
-// - Learn more about primitive wrapper classes and their functions/methods you can use
-// - Learn more about static keyword usage
-// - Learn about method override vs overloading
-// - Learn about java.lang.Object and it's methods
-// - Learn about member default value
-// - Learn what getter and setter methods are
-public class Lesson07_ClassTypeDefinition {
+/**
+ * Class Type Definition
+ *
+ * A real usage of Class to create custom user type and better organizing of your code.
+ * A custom class allow us to not just group functions together (also called methods)
+ * but we group them in such way that they are used to manipulate some member
+ * variables (data) inside the class. When you create a new instance (called object in
+ * general) from a Class, the instance will have their own copy of these member variables
+ * and hence hold "states" and values specific to a instance. Organizing your code this
+ * way is called Object Oriented design.
+ *
+ * Main focus:
+ * - A type definition is a template to create new instance
+ * - A type has a name, properties and methods.
+ * - A type does not use "static"!
+ * - Learn to use "this" for the instance access
+ * - Learn to create constructor to create instance with "new" keyword
+ *
+ * Further study:
+ * - Compare OO to functional programming design
+ * - Learn more about primitive wrapper classes and their functions/methods you can use
+ * - Learn more about static keyword usage
+ * - Learn about method override vs overloading
+ * - Learn about java.lang.Object and it's methods
+ * - Learn about member default value
+ * - Learn what getter and setter methods are
+ */
+
+public class ClassTypeDefinition {
     public static void main(String[] args) {
         // Explore an built-in Class: Integer (or java.lang.Integer)
 
@@ -58,6 +70,10 @@ public class Lesson07_ClassTypeDefinition {
         // Notice that we no longer use "static" keyword for the rest of the class definition!
         public String color;
 
+        // Default constructor
+        public Car() {
+        }
+
         // Using a Constructor to accept argument to the instance
         public Car(String color) {
             // Notice the usage of "this", which means the "instance" that you are working on.
@@ -70,6 +86,12 @@ public class Lesson07_ClassTypeDefinition {
 
         public void changeColor(String newColor) {
             this.color = newColor;
+        }
+
+        public String toString() {
+            return "Car{" +
+                    "color='" + color + '\'' +
+                    '}';
         }
     }
 }
