@@ -20,6 +20,13 @@ java <LessonFileName>
 
 NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
 
+## How to clean up 
+
+If you want to remove all generated `*.class` files, try this in terminal:
+
+    cd basic
+    rm -v $(find . -name '*.class' -o -name '*.jar')
+
 ## Learning Path
 
 * [Lesson 1 - Hello World](Hello.java)
