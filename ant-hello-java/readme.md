@@ -18,4 +18,8 @@ To auto download test + logger libraries, run:
 
     ant download
     ant test
+        
+To generate javadoc
+
+    ant javadoc
     

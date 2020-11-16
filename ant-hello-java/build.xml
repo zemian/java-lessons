@@ -1,5 +1,7 @@
 <project name="hello-ant" default="build" basedir=".">
 
+    <property name="project.version" value="1.0"/>
+    <property name="jdk.version" value="11"/>
     <property name="src" location="src"/>
     <property name="src.main.java" location="${src}/main/java"/>
     <property name="src.main.resources" location="${src}/main/resources"/>
@@ -8,11 +10,10 @@
     <property name="target" location="target"/>
     <property name="target.main.classes" location="${target}/classes"/>
     <property name="target.test.classes" location="${target}/test-classes"/>
+    <property name="target.javadoc" location="${target}/javadoc"/>
     <property name="lib" location="lib"/>
     <property name="lib.compile" location="${lib}/compile"/>
     <property name="lib.test" location="${lib}/test"/>
-    <property name="project.version" value="1.0"/>
-    <property name="jdk.version" value="11"/>
 
     <path id="main.classpath">
         <pathelement location="${target}/classes"/>
@@ -76,6 +77,10 @@
                 </fileset>
             </batchtest>
         </junit>
+    </target>
+
+    <target name="javadoc" depends="init" description="Generate javadoc">
+        <javadoc sourcepath="${src.main.java}" destdir="${target.javadoc}"/>
     </target>
 
     <target name="build" depends="compile" description="Generate distribution package">
