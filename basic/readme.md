@@ -4,7 +4,7 @@ Learning basic Java Programming Language syntax.
 
 NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
 
-Java API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/index.html
+Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
 
 ## Learning Path
 

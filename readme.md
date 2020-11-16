@@ -36,7 +36,6 @@ Full IDEs:
 
 ## Reading List
 
-* https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
 * https://www.oracle.com/java/technologies/javase-downloads.html
 * https://docs.oracle.com/en/java/javase/11/docs/api/index.html
 * https://docs.oracle.com/javase/tutorial/
