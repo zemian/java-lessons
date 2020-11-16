@@ -1,4 +1,4 @@
-/**
+/*
  * Control Statement
  *
  * Main focus:
@@ -65,6 +65,15 @@ public class ControlStatements {
         String input = "foo";
         if (input.equals("foo")) {
             System.out.println("Matched!");
+        }
+
+        // Careful comparing double - use '>' or '<' on difference instead
+        double strange = 0.1 + 0.2;
+        if (strange == 0.3) {
+            System.out.println("Expected");
+        } else {
+            System.out.println("Unexpected");
+            System.out.println(strange); // Output: 0.30000000000000004
         }
 
         // For Loop - repeat

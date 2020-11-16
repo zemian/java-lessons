@@ -1,4 +1,4 @@
-/**
+/*
  * String - a special Java type
  *
  * Main focus:

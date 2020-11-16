@@ -1,4 +1,4 @@
-/**
+/*
  * Primitive Wrappers are builtin Java classes that represents each of the primitive data type.
  *
  * Main focus:
