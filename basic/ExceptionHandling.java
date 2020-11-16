@@ -1,8 +1,3 @@
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
 /**
  * Java allow you to recover from error by catching Exception (or called "runtime exception").
  *
@@ -15,6 +10,8 @@ import java.io.IOException;
  * - Uncheck exception is more friendly to use by caller
  * - Checked exception is more verbose and explicit
  */
+import java.io.*;
+
 public class ExceptionHandling {
     public static void main(String[] args) {
         // Using try catch to handle exception
