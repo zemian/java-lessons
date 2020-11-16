@@ -6,6 +6,17 @@ NOTE: It's important to learn the basic of Java using a plain text editor instea
 
 Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
 
+
+## How to compile and run
+
+```
+cd basic
+javac <LessonFileName>.java
+java <LessonFileName>
+```
+
+NOTE: Some lessons you might need to compile more under the package name.
+
 ## Learning Path
 
 * [Lesson 1 - Hello World](Hello.java)
