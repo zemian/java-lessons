@@ -24,7 +24,7 @@ Java API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/index.htm
 * [Lesson 14 - Enum Type](EnumType.java)
 * [Lesson 15 - Abstract Class](AbstractClass.java)
 * [Lesson 16 - Interface](Interface.java)
-* [Lesson 17 - Inner Class](InnerClass.java)
+* [Lesson 17 - Static and Inner Class](StaticInnerClass.java)
 * [Lesson 18 - Anonymous Class](AnonymousClass.java)
 * [Lesson 19 - Lambda](Lambda.java)
 * [Lesson 20 - Jar Files and Classpath](JarFilesClasspath.java)
