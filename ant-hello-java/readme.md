@@ -1,4 +1,4 @@
-This is a basic ant build tool based project example.
+This is a basic Ant build tool based project example.
 
 Place all source files under `src/main/java` directory.
 NOTE: The file structure is similar to Maven, but it is not a must have requirement.
