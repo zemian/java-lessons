@@ -1,4 +1,4 @@
-/**
+/*
  * Function - Reusable Code
  *
  * Function is for grouping reusable statements into a unit that we can invoke

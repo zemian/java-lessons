@@ -1,4 +1,4 @@
-/**
+/*
  * Java allow you to recover from error by catching Exception (or called "runtime exception").
  *
  * Main focus

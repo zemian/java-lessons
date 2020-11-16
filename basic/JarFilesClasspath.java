@@ -1,6 +1,6 @@
 import packages.Apple;
 
-/**
+/*
  * Jar and Packages - Delivering code easier
  *
  * If you want to share code with other people, transferring large number of classes and packages is not practical.

@@ -1,4 +1,4 @@
-/**
+/*
  * Java supports anonymous function (without name) and it's called Lambda.
  *
  * Main focus:

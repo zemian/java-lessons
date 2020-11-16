@@ -1,4 +1,4 @@
-/**
+/*
  * Interface is a empty class type (contract) that a concrete class must implement.
  *
  * Main focus:

@@ -1,7 +1,4 @@
-import innerclass.BigClass;
-import innerclass.StaticMembersClass;
-
-/**
+/*
  * Static and Inner Classes
  *
  * Main focus:
@@ -15,6 +12,10 @@ import innerclass.StaticMembersClass;
  * NOTE: It's always recommended to create separate class on its file. Especially for libraries that
  * will be given to users as SDK.
  */
+
+import innerclass.BigClass;
+import innerclass.StaticMembersClass;
+
 public class StaticInnerClass {
     public static void main(String[] args) {
         // Test static members

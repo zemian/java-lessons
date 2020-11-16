@@ -1,4 +1,4 @@
-/**
+/*
  * We can create a new anonymous sub type and instantiate it at the same time!
  *
  * Main focus:

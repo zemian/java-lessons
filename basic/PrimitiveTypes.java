@@ -1,4 +1,4 @@
-/**
+/*
  * Java 8 primitive types
  *
  * Main focus:
@@ -14,6 +14,7 @@
  * - Learn how to use good name on variable!
  * - Array is fixed once created
  * - Array can be self-nested (2d arrays)
+ * - Learn about floating point number: https://floating-point-gui.de/formats/fp/
  *
  * Exercise:
  * 1. Find the min and max value of each data type range.
@@ -59,11 +60,11 @@ public class PrimitiveTypes {
 
         // ## Operators
         int sum = 99 + 1;
-        double strange = 0.1 + 0.2;
+        double sum2 = 1.0 + 2.0;
+        int hex = 0xFF >>> 1;
         System.out.println(sum);
-        System.out.println(strange); // Output: 0.30000000000000004
-        System.out.println(0xFF);
-        System.out.println(0xFF >>> 1);
+        System.out.println(sum2);
+        System.out.println(hex);
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html

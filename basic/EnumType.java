@@ -1,4 +1,4 @@
-/**
+/*
  * Enum is a special class type that use to defined strong type constants.
  *
  * Main focus:

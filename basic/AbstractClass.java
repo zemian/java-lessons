@@ -1,4 +1,4 @@
-/**
+/*
  * Abstract class is just a parent class but allow some empty methods.
  *
  * Main focus:

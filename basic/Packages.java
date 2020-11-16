@@ -1,4 +1,4 @@
-/**
+/*
  * Packages - Java namespace
  *
  * If class can hold functions, then think of package is used to hold classes.

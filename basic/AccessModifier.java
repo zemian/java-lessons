@@ -1,4 +1,4 @@
-/**
+/*
  * AccessModifier - control how a type, properties and methods are allowed to access by caller.
  *
  * Java classes can have modifier keywords when defining them. These will affect

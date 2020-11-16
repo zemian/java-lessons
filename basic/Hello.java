@@ -1,4 +1,4 @@
-/**
+/*
  * A classic Hello World program in Java
  *
  * Main focus:

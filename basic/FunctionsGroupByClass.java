@@ -1,4 +1,4 @@
-/**
+/*
  * Function - Java static methods
  *
  * One usage of Class is to simply group functions together.

@@ -1,4 +1,4 @@
-/**
+/*
  * Class definition can extend other class so that we can reuse code more effectively
  *
  * Main focus:

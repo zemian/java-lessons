@@ -1,5 +1,4 @@
-
-/**
+/*
  * Collection Types - like an array, a special type that act as data value container.
  *
  * Main focus:

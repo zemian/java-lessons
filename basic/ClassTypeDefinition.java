@@ -1,4 +1,4 @@
-/**
+/*
  * Class Type Definition
  *
  * A real usage of Class to create custom user type and better organizing of your code.
