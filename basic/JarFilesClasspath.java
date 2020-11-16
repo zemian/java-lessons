@@ -25,6 +25,10 @@ import packages.Apple;
 //
 // Use following in a terminal to create a jar file.
 //
+// How to clean up all generated files
+//
+//    rm -v $(find . -name '*.class' -o -name '*.jar')
+//
 // To create a jar file
 //
 //     cd basic

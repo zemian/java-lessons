@@ -22,7 +22,7 @@ NOTE: Some lessons might have additional compilation steps. See the code comment
 
 ## How to clean up 
 
-If you want to remove all generated `*.class` files, try this in terminal:
+If you want to remove all generated files, try this in terminal:
 
     cd basic
     rm -v $(find . -name '*.class' -o -name '*.jar')
