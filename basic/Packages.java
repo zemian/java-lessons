@@ -18,6 +18,19 @@
  *   java.util.*, java.io.*, java.text.*
  */
 
+//
+// How to compile and run this program with package files:
+//
+// Method1: List files explicitly
+//
+//   javac packages/Apple.java packages/recipe/ApplePie.java packages/recipe/ApplePie.java Packages.java
+//   java Packages
+//
+// Method2: Use find command
+//   javac javac $(find packages -name '*.java') Packages.java
+//   java Packages
+//
+
 import packages.Apple; // Or you can do "lesson06.*" to import all classes
 
 // Use import statement to bring in class definitions

@@ -18,22 +18,26 @@ import packages.Apple;
  * - Learn what a decompiler is
  * - Learn to use project builder tool: ant or maven
  * - Learn to use IDE to export jar file
+ * - Learn that you can package resource files inside jar
+ * - Learn how to read resource files from inside a jar programmatically
  */
-public class JarFilesClasspath {
 
-    // Use following in a terminal to create a jar file.
-    //
-    //     # To create a jar file
-    //     cd basic
-    //     javac JarFilesClasspath.java $(find packages -name '*.java')
-    //     jar -cvf my.jar JarFilesClasspath.* $(find packages -name '*.class')
-    //
-    //     # To inspect the jar file
-    //     jar tvf my.jar
-    //
-    //     # To run a jar file that has a main()
-    //     java -classpath '.:my.jar' JarFilesClasspath
-    //
+//
+// Use following in a terminal to create a jar file.
+//
+//     # To create a jar file
+//     cd basic
+//     javac $(find packages -name '*.java') JarFilesClasspath.java
+//     jar -cvf my.jar $(find packages -name '*.class') JarFilesClasspath.*
+//
+//     # To inspect the jar file
+//     jar tvf my.jar
+//
+//     # To run a jar file that has a main()
+//     java -classpath '.:my.jar' JarFilesClasspath
+//
+
+public class JarFilesClasspath {
     public static void main(String[] args) {
         System.out.println(Apple.tasteDescription());
         System.out.println(packages.recipe.ApplePie.howToCook());
