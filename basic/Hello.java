@@ -18,13 +18,25 @@
  * 3. Install/reinstall latest JDK software package.
  */
 
-//  
-// # To compile it
-// cd basic
-// javac Hello.java
 //
-// # To run it
-// java Hello
+// 1. Download and install JDK 11 from https://www.oracle.com/java
+//
+// 2. Setup Terminal environment variable with where you installed JDK.
+//    For example: edit ".bashrc" file and add the following at the end:
+//
+//      export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home
+//      export PATH=$JAVA_HOME/bin:$PATH
+//
+// 3. Verify "java -version" and "which javac" are expected
+//
+// 4. Compile and Run Hello program
+//
+//      # To compile it
+//      cd basic
+//      javac Hello.java
+//
+//      # To run it
+//      java Hello
 //
 public class Hello {
     public static void main(String[] args) {
