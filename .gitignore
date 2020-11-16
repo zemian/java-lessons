@@ -16,3 +16,5 @@ build/
 basic/*.class
 basic/**/*.class
 basic/*.jar
+
+temp/
