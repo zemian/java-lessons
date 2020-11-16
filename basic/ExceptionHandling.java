@@ -1,3 +1,8 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 /**
  * Java allow you to recover from error by catching Exception (or called "runtime exception").
  *
@@ -20,6 +25,7 @@ public class ExceptionHandling {
         } catch (Exception e) {
             System.out.println("Something went wrong. Reason: " + e.getMessage());
             System.out.println("Exception class name: " + e.getClass().getName());
+//            e.printStackTrace(); // Print this if you want to debug full stacktrace
         }
 
         // Catch specific subclass exceptions
@@ -70,6 +76,38 @@ public class ExceptionHandling {
         testDivide();
 //        testDivideWithCheckedException(); // ERROR: You must catch it
         testDivideWithUncheckException();
+
+        // Try Resources instead of finally block
+        // Reading text file example - old way
+        String file = "Hello.java";
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(file));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Failed to read file " + file);
+        } finally {
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    System.out.println("Failed to close reader.");
+                }
+            }
+        }
+
+        // Reading text file example - new way
+        try (BufferedReader reader2 = new BufferedReader(new FileReader(file))) {
+            String line;
+            while ((line = reader2.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.out.println("Failed to read file " + file);
+        }
     }
 
     public static class BadNumberException extends Exception {
