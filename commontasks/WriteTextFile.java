@@ -7,7 +7,7 @@ public class WriteTextFile {
         try(BufferedWriter writer = new BufferedWriter(new FileWriter(file))) {
             for (int i = 0; i < 10; i++) {
                 String line = UUID.randomUUID().toString();
-                writer.write(line);
+                writer.write(line + "\n");
             }
         }
     }
