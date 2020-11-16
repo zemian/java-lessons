@@ -1,6 +1,6 @@
 # java-lessons
 
-Lessons files for teaching Java programming language.
+Lesson files for teaching Java programming language.
 
 ## Learning Path
 
