@@ -45,6 +45,11 @@ import packages.Apple;
 //     ant build
 //     java -cp target/basic-1.0.jar JarFilesClasspath
 //
+// You may also try generating javadoc!
+//
+//     ant javadoc
+//     open target/javadoc
+//
 public class JarFilesClasspath {
     public static void main(String[] args) {
         System.out.println(Apple.tasteDescription());
