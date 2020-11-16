@@ -4,8 +4,8 @@ Lessons files for teaching Java programming language.
 
 ## Learning Path
 
-* `basic` - Learn the basic programming language syntax and construct
-* `commontasks` - Learn how to do some common tasks with the language
+* [basic](basic) - Learn the basic programming language syntax and construct
+* [commontasks](commontasks) - Learn how to do some common tasks with the language
 
 ## How to run
 
