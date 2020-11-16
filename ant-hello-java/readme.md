@@ -8,7 +8,7 @@ the `lib/compile` folder.
 
 To build the project, run:
 
-    ant dist
+    ant build
     
 To clean and retry
 
@@ -16,6 +16,6 @@ To clean and retry
     
 To auto download test + logger libraries, run:
 
-    ant download-lib
+    ant download
     ant test
     

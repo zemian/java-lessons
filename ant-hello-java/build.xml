@@ -1,10 +1,16 @@
-<project name="hello-ant" default="dist" basedir=".">
+<project name="hello-ant" default="build" basedir=".">
 
     <property name="src" location="src"/>
+    <property name="src.main.java" location="${src}/main/java"/>
+    <property name="src.main.resources" location="${src}/main/resources"/>
+    <property name="src.test.java" location="${src}/test/java"/>
+    <property name="src.test.resources" location="${src}/main/resources"/>
     <property name="target" location="target"/>
+    <property name="target.main.classes" location="${target}/classes"/>
+    <property name="target.test.classes" location="${target}/test-classes"/>
     <property name="lib" location="lib"/>
     <property name="project.version" value="1.0"/>
-    <property name="java.version" value="11"/>
+    <property name="jdk.version" value="11"/>
 
     <path id="main.classpath">
         <pathelement location="${target}/classes"/>
@@ -16,7 +22,7 @@
         <fileset dir="${lib}/test" includes="*.jar"/>
     </path>
 
-    <target name="download-lib">
+    <target name="download">
         <mkdir dir="${lib}/compile"/>
         <mkdir dir="${lib}/test"/>
 
@@ -31,7 +37,8 @@
 
     <target name="init">
         <tstamp/>
-        <mkdir dir="${target}/classes"/>
+        <mkdir dir="${target.main.classes}"/>
+        <mkdir dir="${target.test.classes}"/>
     </target>
 
     <target name="clean" description="clean up">
@@ -39,19 +46,19 @@
     </target>
 
     <target name="compile" depends="init" description="Compile main source files">
-        <copy todir="${target}/classes">
-            <fileset dir="${src}/main/resources" includes="**/*"/>
+        <copy todir="${target.main.classes}">
+            <fileset dir="${src.main.resources}" includes="**/*"/>
         </copy>
-        <javac srcdir="${src}/main/java" destdir="${target}/classes" classpathref="main.classpath"
-               includeantruntime="false" source="${java.version}" target="${java.version}">
+        <javac srcdir="${src.main.java}" destdir="${target.main.classes}" classpathref="main.classpath"
+               includeantruntime="false" compiler="modern" release="${jdk.version}">
         </javac>
     </target>
     <target name="compile-test" depends="compile" description="Compile test source files">
-        <copy todir="${target}/test-classes">
-            <fileset dir="${src}/test/resources" includes="**/*"/>
+        <copy todir="${target.test.classes}">
+            <fileset dir="${src.test.resources}" includes="**/*"/>
         </copy>
-        <javac srcdir="${src}/test/java" destdir="${target}/test-classes" classpathref="test.classpath"
-               includeantruntime="false" source="${java.version}" target="${java.version}">
+        <javac srcdir="${src.test.java}" destdir="${target.test.classes}" classpathref="test.classpath"
+               includeantruntime="false" compiler="modern" release="${jdk.version}">
         </javac>
     </target>
 
@@ -62,14 +69,14 @@
             </classpath>
             <formatter type="plain"/>
             <batchtest fork="yes" todir="${target}/test-reports">
-                <fileset dir="${src}/test/java">
+                <fileset dir="${src.test.java}">
                     <include name="**/*Test*.java"/>
                 </fileset>
             </batchtest>
         </junit>
     </target>
 
-    <target name="dist" depends="compile" description="Generate distribution package">
-        <jar jarfile="${target}/${ant.project.name}-${project.version}.jar" basedir="${target}/classes"/>
+    <target name="build" depends="compile" description="Generate distribution package">
+        <jar jarfile="${target}/${ant.project.name}-${project.version}.jar" basedir="${target.main.classes}"/>
     </target>
 </project>
