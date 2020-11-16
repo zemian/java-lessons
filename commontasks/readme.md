@@ -1,2 +1,18 @@
 See more examples under this project: 
 https://github.com/zemian/learn-java/tree/master/java-starter/src/main/java/zemian/javastarter
+
+## Learning Path
+
+Lang Basic
+
+* [StringExamples](StringExamples.java)
+
+File/Dir IO
+
+* [ReadTextFile](ReadTextFile.java)
+* [WriteTextFile](WriteTextFile.java)
+* [ReadPropertiesFile](ReadPropertiesFile.java)
+
+System IO
+
+* [SystemCall](SystemCall.java)
