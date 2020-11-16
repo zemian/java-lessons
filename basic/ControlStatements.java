@@ -61,6 +61,12 @@ public class ControlStatements {
             System.out.println("a is lesser than b");
         }
 
+        // Special String comparison: DO NOT USE '==' operator!
+        String input = "foo";
+        if (input.equals("foo")) {
+            System.out.println("Matched!");
+        }
+
         // For Loop - repeat
         for (int i = 0; i < 3; i++) {
             System.out.println(i);
