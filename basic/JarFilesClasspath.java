@@ -25,16 +25,20 @@ import packages.Apple;
 //
 // Use following in a terminal to create a jar file.
 //
-//     # To create a jar file
+// To create a jar file
+//
 //     cd basic
 //     javac $(find packages -name '*.java') JarFilesClasspath.java
 //     jar -cvf my.jar $(find packages -name '*.class') JarFilesClasspath.*
 //
-//     # To inspect the jar file
+// To inspect the jar file
+//
 //     jar tvf my.jar
 //
-//     # To run a jar file that has a main()
-//     java -classpath '.:my.jar' JarFilesClasspath
+// To run a jar file that has a main()
+//
+//     java -classpath my.jar JarFilesClasspath
+//     java -cp my.jar JarFilesClasspath
 //
 
 public class JarFilesClasspath {
