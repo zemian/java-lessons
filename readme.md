@@ -4,8 +4,8 @@ Lessons files for teaching Java programming language.
 
 ## Learning Path
 
-* [basic](basic) - Learn the basic programming language syntax and construct
-* [commontasks](commontasks) - Learn how to do some common tasks with the language
+* [basic](basic) - Learn the basic Java programming language syntax and construct
+* [commontasks](commontasks) - Learn how to do some common tasks with the Java language
 * [maven-hello-java](maven-hello-java) - Learn how to use Maven build tool
 * [ant-hello-java](ant-hello-java) - Learn how to use Ant build tool
 
