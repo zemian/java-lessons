@@ -1,11 +1,14 @@
 # basic
 
-Learning basic Java Programming Language syntax. 
+Learning basic Java Programming Language. 
 
 NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
 
 Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
 
+## Setup Java
+
+See code Comments inside your [first program](Hello.java).
 
 ## How to compile and run
 
@@ -15,7 +18,7 @@ javac <LessonFileName>.java
 java <LessonFileName>
 ```
 
-NOTE: Some lessons you might need to compile more under the package name.
+NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
 
 ## Learning Path
 
