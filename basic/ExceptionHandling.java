@@ -83,9 +83,10 @@ public class ExceptionHandling {
         BufferedReader reader = null;
         try {
             reader = new BufferedReader(new FileReader(file));
-            String line;
-            while ((line = reader.readLine()) != null) {
+            String line = reader.readLine();
+            while (line != null) {
                 System.out.println(line);
+                line = reader.readLine();
             }
         } catch (IOException e) {
             System.out.println("Failed to read file " + file);
