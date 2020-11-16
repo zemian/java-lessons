@@ -50,6 +50,7 @@ import packages.Apple;
 //     java -cp target/basic-1.0.jar JarFilesClasspath
 //
 // You may also try generating javadoc!
+// NOTE: This javadoc tool only generate package classes. It ignores default package classes.
 //
 //     ant javadoc
 //     open target/javadoc
