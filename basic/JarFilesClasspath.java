@@ -40,7 +40,11 @@ import packages.Apple;
 //     java -classpath my.jar JarFilesClasspath
 //     java -cp my.jar JarFilesClasspath
 //
-
+// You may also use Ant tool to compile all the java files:
+//
+//     ant build
+//     java -cp target/basic-1.0.jar JarFilesClasspath
+//
 public class JarFilesClasspath {
     public static void main(String[] args) {
         System.out.println(Apple.tasteDescription());
