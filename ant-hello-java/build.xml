@@ -49,7 +49,7 @@
 
     <target name="compile" depends="init" description="Compile main source files">
         <copy todir="${target.main.classes}">
-            <fileset dir="${src.main.resources}" includes="**/*"/>
+            <fileset dir="${src.main.resources}" includes="**/*" excludes="**/*.java"/>
         </copy>
         <javac srcdir="${src.main.java}" destdir="${target.main.classes}" classpathref="main.classpath"
                includeantruntime="false" compiler="modern" release="${jdk.version}">
@@ -57,7 +57,7 @@
     </target>
     <target name="compile-test" depends="compile" description="Compile test source files">
         <copy todir="${target.test.classes}">
-            <fileset dir="${src.test.resources}" includes="**/*"/>
+            <fileset dir="${src.test.resources}" includes="**/*" excludes="**/*.java"/>
         </copy>
         <javac srcdir="${src.test.java}" destdir="${target.test.classes}" classpathref="test.classpath"
                includeantruntime="false" compiler="modern" release="${jdk.version}">
