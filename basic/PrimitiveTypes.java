@@ -2,7 +2,7 @@
  * Java 8 primitive types
  *
  * Main focus:
- * - There 4 main types: int, double, boolean, and String
+ * - There 4 main types: int, double, boolean, and char
  * - Other 4 types are just more narrow or wider of the main type on the data range.
  * - Each type can be group together using "array"
  *

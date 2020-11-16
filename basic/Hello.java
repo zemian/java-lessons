@@ -17,15 +17,16 @@
  * 2. Find the version of your "java" command in your system
  * 3. Install/reinstall latest JDK software package.
  */
-public class Hello {
-    /*
-        # To compile it
-        cd basic
-        javac Hello.java
 
-        # To run it
-        java Hello
-     */
+//  
+// # To compile it
+// cd basic
+// javac Hello.java
+//
+// # To run it
+// java Hello
+//
+public class Hello {
     public static void main(String[] args) {
         System.out.println("Hello World!");
     }

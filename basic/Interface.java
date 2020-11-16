@@ -8,6 +8,9 @@
  * - Interface can not hold member properties, but only constants
  * - Interface is like parent class that can support polymorphism
  */
+
+import java.util.*;
+
 public class Interface {
     public static void main(String[] args) {
         // Create normal instances
@@ -31,6 +34,10 @@ public class Interface {
         Engine coolEngine = createEngine("car");
         coolEngine.start();
         coolEngine.stop();
+
+        // Another example usage of interface
+        List<Integer> list = new ArrayList<>();
+        Map<String, Integer> map = new HashMap<>();
     }
 
     public static Engine createEngine(String type) {
