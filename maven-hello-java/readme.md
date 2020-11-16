@@ -1,4 +1,4 @@
-This is a basic Maven build tool based project example.
+This is a basic [Maven](http://maven.apache.org/) build tool based project example.
 
 Place all source files under `src/main/java` directory.
 
