@@ -11,21 +11,19 @@ There is a readme file in each folder for further instruction.
 * [Maven Build Tool](maven-hello-java) - Learn how to use Maven build tool
 * [Ant Build Tool](ant-hello-java) - Learn how to use Ant build tool
 
-## Recommended Text Editors and IDEs
+## Install and Setup Java Development Kit (JDK)
+
+See instructions in [here](basic/Hello.java).
+
+## Recommended Text Editor and IDE
+
+You are free to use any editor you like. But here are my recommendation:
 
 NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
 
-Text Editors:
+Text Editor: [Atom Editor](https://atom.io/)
 
-* Sublime Text
-* Atom Editor
-* Notedpad++ for Windows
-
-Full IDEs:
-
-* JetBrains IDEA IntelliJ
-* Eclipse IDE for Java
-* Microsoft VSCode
+Full IDE: [JetBrains IDEA IntelliJ - Community Version](https://www.jetbrains.com/idea/download/)
 
 ## Reading List
 

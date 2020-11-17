@@ -1,6 +1,6 @@
 # basic
 
-Learning basic Java Programming Language. 
+Learning basic Java Programming Language.
 
 NOTE: It's important to learn the basic of Java using a plain text editor instead of a full IDE.
 
@@ -16,12 +16,12 @@ on related topics on their own.
 After these lessons, the students should able to understand basic of Java programming language and be
 able to read existing code and write simple program on their own.
 
-There are many Java programming patterns and techniques that goes beyong the basic syntax. You may
-want to explore some [Common Tasks](../commontasks) folders for more.
+There are many Java programming patterns and techniques that go beyong the basic syntax. After
+these lessons, you may want to explore some [Common Tasks](../commontasks) in Java.
 
-## Setup Java
+## Install and Setup Java Development Kit (JDK)
 
-See code comments inside your [first program](Hello.java).
+See instructions in [here](Hello.java).
 
 NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
 
