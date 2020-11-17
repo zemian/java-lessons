@@ -7,7 +7,7 @@
  * - Show how to add custom code to the run per Thread
  *
  * Further study:
- * - Learn how to synchronize code to prevent data corruption
+ * - Learn how to synchronize and volatile keywords to prevent data corruption
  * - Learn about thread pool
  */
 
