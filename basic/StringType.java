@@ -59,7 +59,7 @@ public class StringType {
         String line = String.join("|", words);
         System.out.println(line);
 
-        // Compare strings
+        // Compare strings - Do not use '==' on String
         String a = "foo";
         if (a.equals("foo")) {
             System.out.println("String a is a 'foo'");
