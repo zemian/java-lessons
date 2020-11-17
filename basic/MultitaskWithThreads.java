@@ -1,19 +1,19 @@
 /*
- * Java let you run code in parallel using Thread. This allow you to multitasking
- * and speed up certain type of operations.
- *
- * Main focus:
- * - How two threads can start
- * - How to add custom code to the run per Thread
- * - How to synchronized keyword to prevent data corruption
- *
- * Further study:
- * - Do not use deprecated Thread.start()/Thread.stop()
- * - Learn how you can control the stopping of a running thread
- * - You can synchronized on a object instance!
- * - Explore volatile keyword and compare to synchronized
- * - Learn about thread pool
- * - Learn more about "java.util.concurrent" package
+Java let you run code in parallel using Thread. This allow you to multitasking
+and speed up certain type of operations.
+
+Main focus:
+- How two threads can start
+- How to add custom code to the run per Thread
+- How to synchronized keyword to prevent data corruption
+
+Further study:
+- Do not use deprecated Thread.start()/Thread.stop()
+- Learn how you can control the stopping of a running thread
+- You can synchronized on a object instance!
+- Explore volatile keyword and compare to synchronized
+- Learn about thread pool
+- Learn more about "java.util.concurrent" package
  */
 
 import java.util.Date;

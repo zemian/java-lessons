@@ -1,16 +1,16 @@
 /*
- * Static and Inner Classes
- *
- * Main focus:
- * - The "static" keyword is used to NOT use object instance and turns storage as one global space.
- * - You can nest class type definition inside another class
- *
- * In fact you have been doing this in many lessons already. We will explore few ways this can
- * affect your code. We do this on occasion that we need a quick type that only needed internally
- * for a specific use.
- *
- * NOTE: It's always recommended to create separate class on its file. Especially for libraries that
- * will be given to users as SDK.
+Static and Inner Classes
+
+Main focus:
+- The "static" keyword is used to NOT use object instance and turns storage as one global space.
+- You can nest class type definition inside another class
+
+In fact you have been doing this in many lessons already. We will explore few ways this can
+affect your code. We do this on occasion that we need a quick type that only needed internally
+for a specific use.
+
+NOTE: It's always recommended to create separate class on its file. Especially for libraries that
+will be given to users as SDK.
  */
 
 import innerclass.BigClass;

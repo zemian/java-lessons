@@ -1,14 +1,14 @@
 /*
- * Java allow you to recover from error by catching Exception (or called "runtime exception").
- *
- * Main focus
- * - Using try/catch with base class Exception
- * - Catching specific subclass exception
- * - Using try/catch/finally
- *
- * Further Study:
- * - Uncheck exception is more friendly to use by caller
- * - Checked exception is more verbose and explicit
+Java allow you to recover from error by catching Exception (or called "runtime exception").
+
+Main focus
+- Using try/catch with base class Exception
+- Catching specific subclass exception
+- Using try/catch/finally
+
+Further Study:
+- Uncheck exception is more friendly to use by caller
+- Checked exception is more verbose and explicit
  */
 import java.io.*;
 

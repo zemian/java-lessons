@@ -1,16 +1,16 @@
 /*
- * Java support Generic Type (a variable to represent a unknown type).
- * You already used collection types such as ArrayList and HashMap. They both
- * uses Generic type "<Type>" syntax to tell compiler what data they hold. Without
- * this, you will have to reduce to duplicate the class, one for each type. Or
- * use dump "Object" to hold the data, which lose the type information. Generic
- * allow you to solve this problem.
- *
- * Main focus:
- * - Learn how to object data with Object and then cast
- * - Learn to write type definition with generic
- * - Learn about Java reflection and their related classes.
- * - There are a lot more to generic - see https://docs.oracle.com/javase/tutorial/java/generics/types.html
+Java support Generic Type (a variable to represent a unknown type).
+You already used collection types such as ArrayList and HashMap. They both
+uses Generic type "<Type>" syntax to tell compiler what data they hold. Without
+this, you will have to reduce to duplicate the class, one for each type. Or
+use dump "Object" to hold the data, which lose the type information. Generic
+allow you to solve this problem.
+
+Main focus:
+- Learn how to object data with Object and then cast
+- Learn to write type definition with generic
+- Learn about Java reflection and their related classes.
+- There are a lot more to generic - see https://docs.oracle.com/javase/tutorial/java/generics/types.html
  */
 
 import java.lang.reflect.Array;

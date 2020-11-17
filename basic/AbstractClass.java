@@ -1,11 +1,10 @@
 /*
- * Abstract class is just a parent class but allow some empty methods.
- *
- * Main focus:
- * - Class can only extends one abstract class as parent
- * - You can not create new instance with abstract class
- * - All methods must be provided by subclass
- * - Abstract class can hold member properties
+Abstract class is just a parent class but allow some empty methods.
+Main focus:
+- Class can only extends one abstract class as parent
+- You can not create new instance with abstract class
+- All methods must be provided by subclass
+- Abstract class can hold member properties
  */
 public class AbstractClass {
     public static void main(String[] args) {

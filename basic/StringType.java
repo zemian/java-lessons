@@ -1,20 +1,20 @@
 /*
- * String - a special Java type
- *
- * Main focus:
- * - Create string using double quote literal
- * - It can use "null" value
- * - It's a object, hence it can use "dot" operator on methods.
- *
- * Further study:
- * - Learn some common String function/methods you can use from the API
- * - Learn more on java.util.Arrays class and it's methods from the API
- * - Learn more about Java regular expression
- *
- * Exercises:
- * 1. What happen when you call "dot" methods on a null value?
- * 2. Create a string from array of "char". *
- * 3. Convert all string value to upper case.
+String - a special Java type
+
+Main focus:
+- Create string using double quote literal
+- It can use "null" value
+- It's a object, hence it can use "dot" operator on methods.
+
+Further study:
+- Learn some common String function/methods you can use from the API
+- Learn more on java.util.Arrays class and it's methods from the API
+- Learn more about Java regular expression
+
+Exercises:
+1. What happen when you call "dot" methods on a null value?
+2. Create a string from array of "char".
+3. Convert all string value to upper case.
  */
 public class StringType {
     public static void main(String[] args) {

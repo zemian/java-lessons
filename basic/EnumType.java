@@ -1,10 +1,10 @@
 /*
- * Enum is a special class type that use to defined strong type constants.
- *
- * Main focus:
- * - Simple enum that has ordinal id and string constant.
- * - Custom enum that we define our own data.
- * - You can not extends enum type!
+Enum is a special class type that use to defined strong type constants.
+
+Main focus:
+- Simple enum that has ordinal id and string constant.
+- Custom enum that we define our own data.
+- You can not extends enum type!
  */
 
 import java.util.*;

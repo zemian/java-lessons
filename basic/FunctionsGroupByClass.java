@@ -1,13 +1,13 @@
 /*
- * Function - Java static methods
- *
- * One usage of Class is to simply group functions together.
- *
- * Further study:
- * - Notice the usage of "static" keyword on function
- * - Notice how we created a classes inside our main class (nested or inner classes)
- * - Explore how "javac" generate ".class" files on these inner classes.
- * - Notice that all code in Java program must be inside one or more classes!
+Function - Java static methods
+
+One usage of Class is to simply group functions together.
+
+Further study:
+- Notice the usage of "static" keyword on function
+- Notice how we created a classes inside our main class (nested or inner classes)
+- Explore how "javac" generate ".class" files on these inner classes.
+- Notice that all code in Java program must be inside one or more classes!
  */
 public class FunctionsGroupByClass {
     public static void main(String[] args) {

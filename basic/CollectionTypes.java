@@ -1,30 +1,30 @@
 /*
- * Collection Types - like an array, a special type that act as data value container.
- *
- * Main focus:
- * - Learn two most used types: ArrayList and HashMap.
- * - Learn about generic type syntax with "Name<Type>" syntax.
- * - ArrayList and HashMap can only work with wrapper type, not primitives.
- * - ArrayList and HashMap can can be self-nested!
- *
- * Further study:
- * - Learn how to use java.util.Set, it's already been used to store HashMap keys!
- * - See more methods available for List at
- *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
- * - See more methods available for Map at
- *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
- * - Learn different ways on creating List or Map using interface holder:
- *     List<Integer> list = new ArrayList<>();
- *     Map<String, Integer> map = new HashMap<>();
- * - Learn about immutable List.of(1, 2, 3) or Arrays.asList(1, 2, 3)
- * - Learn about immutable Map.of("foo", 77, "bar", 88)
- * - Explore how Object.equals() and Object.hashCode() affect HashMap keys.
- *
- * Exercise:
- * 1. Process args and filter out ones starts with "-"
- * 2. Count letter frequency in a string
- * 3. Reverse a list elements
- * 4. Create a map of this type: HashMap<String, ArrayList<Integer>> and populate with some data
+Collection Types - like an array, a special type that act as data value container.
+
+Main focus:
+- Learn two most used types: ArrayList and HashMap.
+- Learn about generic type syntax with "Name<Type>" syntax.
+- ArrayList and HashMap can only work with wrapper type, not primitives.
+- ArrayList and HashMap can can be self-nested!
+
+Further study:
+- Learn how to use java.util.Set, it's already been used to store HashMap keys!
+- See more methods available for List at
+  https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
+- See more methods available for Map at
+  https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
+- Learn different ways on creating List or Map using interface holder:
+    List<Integer> list = new ArrayList<>();
+    Map<String, Integer> map = new HashMap<>();
+- Learn about immutable List.of(1, 2, 3) or Arrays.asList(1, 2, 3)
+- Learn about immutable Map.of("foo", 77, "bar", 88)
+- Explore how Object.equals() and Object.hashCode() affect HashMap keys.
+
+Exercise:
+1. Process args and filter out ones starts with "-"
+2. Count letter frequency in a string
+3. Reverse a list elements
+4. Create a map of this type: HashMap<String, ArrayList<Integer>> and populate with some data
  */
 
 // You need to import the collection type classes first
@@ -68,7 +68,7 @@ public class CollectionTypes {
 
         // Append large data
         for (int i = 0; i < 100_000; i++) {
-            list.add(99 * i);
+            list.add(99i);
         }
         System.out.println(list.size());
         System.out.println(list.get(list.size() - 1)); // Get last item
@@ -136,7 +136,7 @@ public class CollectionTypes {
 
         // Append large data
         for (int i = 0; i < 100_000; i++) {
-            map.put("mykey_" + i, 99 * i);
+            map.put("mykey_" + i, 99i);
         }
         System.out.println(map.size());
         System.out.println(map.get("mykey_99999"));

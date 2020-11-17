@@ -1,12 +1,12 @@
 /*
- * Interface is a empty class type (contract) that a concrete class must implement.
- *
- * Main focus:
- * - Class can implements multiple interfaces!
- * - All methods must be provided by implementation class
- * - You can not create new instance with interface
- * - Interface can not hold member properties, but only constants
- * - Interface is like parent class that can support polymorphism
+Interface is a empty class type (contract) that a concrete class must implement.
+
+Main focus:
+- Class can implements multiple interfaces!
+- All methods must be provided by implementation class
+- You can not create new instance with interface
+- Interface can not hold member properties, but only constants
+- Interface is like parent class that can support polymorphism
  */
 
 import java.util.*;

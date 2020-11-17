@@ -1,15 +1,15 @@
 /*
- * Java supports anonymous function (without name) and it's called Lambda.
- *
- * Main focus:
- * - Create a one time function usage that pass to other function as argument.
- * - Implement single abstract method (SAM)
- * - Provide Java function programming style
- *
- * Further study:
- * - See https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
- * - Learn about Java Stream https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
- *
+Java supports anonymous function (without name) and it's called Lambda.
+
+Main focus:
+- Create a one time function usage that pass to other function as argument.
+- Implement single abstract method (SAM)
+- Provide Java function programming style
+
+Further study:
+- See https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
+- Learn about Java Stream https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
+
  */
 
 import java.util.*;
@@ -60,13 +60,13 @@ public class Lambda {
         // Working array with stream() receiver - function programming style
         // Note we need a utility method to convert array to stream() first
         int[] numbers = {7, 8, 9};
-        int[] doubleNumbers = java.util.Arrays.stream(numbers).map((num) -> num * 2).toArray();
+        int[] doubleNumbers = java.util.Arrays.stream(numbers).map((num) -> num2).toArray();
         System.out.println(doubleNumbers[0]);
         System.out.println(doubleNumbers[1]);
         System.out.println(doubleNumbers[2]);
 
         // Or if there is only one argument, you don't need parenthesis
-        doubleNumbers = java.util.Arrays.stream(numbers).map(num -> num * 2).toArray();
+        doubleNumbers = java.util.Arrays.stream(numbers).map(num -> num2).toArray();
         System.out.println(doubleNumbers[0]);
     }
 

@@ -1,10 +1,10 @@
 /*
- * We can create a new anonymous sub type and instantiate it at the same time!
- *
- * Main focus:
- * - You can do this with any class type that you need subclass with.
- * - This is often needed when we want to provide a quick instance of an interface.
- * - The anonymous sub type assignment statement!
+We can create a new anonymous sub type and instantiate it at the same time!
+
+Main focus:
+- You can do this with any class type that you need subclass with.
+- This is often needed when we want to provide a quick instance of an interface.
+- The anonymous sub type assignment statement!
  */
 
 public class AnonymousClass {

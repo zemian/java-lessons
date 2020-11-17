@@ -1,18 +1,18 @@
 /*
- * Class definition can extend other class so that we can reuse code more effectively
- *
- * Main focus:
- * - Reuse code by inheriting from a base class
- * - Only one parent class is allowed
- * - Default parent class is java.lang.Object
- * - Add common properties and methods in parent class
- * - Add extra properties and/or methods to sub-class
- * - Override methods, not properties
- *
- * Further study:
- * - A Class can only extend ONE parent class
- * - Learn what class encapsulation mean
- * - Learn to override equals() and hashCode() for custom used by HashMap key
+Class definition can extend other class so that we can reuse code more effectively
+
+Main focus:
+- Reuse code by inheriting from a base class
+- Only one parent class is allowed
+- Default parent class is java.lang.Object
+- Add common properties and methods in parent class
+- Add extra properties and/or methods to sub-class
+- Override methods, not properties
+
+Further study:
+- A Class can only extend ONE parent class
+- Learn what class encapsulation mean
+- Learn to override equals() and hashCode() for custom used by HashMap key
  */
 public class ClassInheritance {
     public static void main(String[] args) {

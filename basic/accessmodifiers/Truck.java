@@ -20,7 +20,7 @@ public class Truck extends Car {
 
     public double calculatePrice() {
         // We can access "protected" property
-        return this.price * 2;
+        return this.price2;
     }
 
     public String getDealerLocation() {

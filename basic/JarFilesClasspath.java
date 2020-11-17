@@ -1,25 +1,23 @@
-import packages.Apple;
-
 /*
- * Jar and Packages - Delivering code easier
- *
- * If you want to share code with other people, transferring large number of classes and packages is not practical.
- * Java give you a way to not only zip up all files, but also compress it!
- *
- * Main focus:
- * - Reuse "packages" output from previous lesson
- * - Build jar file with "jar" command.
- * - Inspect a .class with "javap"
- *
- * Further study:
- * - Learn to use multiple jar files
- * - Learn how to use 'javac -d'
- * - Create executable jar and run with 'java -jar'
- * - Learn what a decompiler is
- * - Learn to use project builder tool: ant or maven
- * - Learn to use IDE to export jar file
- * - Learn that you can package resource files inside jar
- * - Learn how to read resource files from inside a jar programmatically
+Jar and Packages - Delivering code easier
+
+If you want to share code with other people, transferring large number of classes and packages is not practical.
+Java give you a way to not only zip up all files, but also compress it!
+
+Main focus:
+- Reuse "packages" output from previous lesson
+- Build jar file with "jar" command.
+- Inspect a .class with "javap"
+
+Further study:
+- Learn to use multiple jar files
+- Learn how to use 'javac -d'
+- Create executable jar and run with 'java -jar'
+- Learn what a decompiler is
+- Learn to use project builder tool: ant or maven
+- Learn to use IDE to export jar file
+- Learn that you can package resource files inside jar
+- Learn how to read resource files from inside a jar programmatically
  */
 
 //
@@ -59,6 +57,9 @@ import packages.Apple;
 //     ant javadoc
 //     open target/javadoc
 //
+
+import packages.Apple;
+
 public class JarFilesClasspath {
     public static void main(String[] args) {
         System.out.println(Apple.tasteDescription());

@@ -1,18 +1,18 @@
 /*
- * Meta mean about itself, so Meta Class mean information describing a Class.
- *
- * When you write a Class type definition, Java will load it and represent it
- * using a special type called "java.lang.Class". Hence it's a type about type (or
- * Meta Class)! Given an instance of a "java.lang.Class", you can query a lot of
- * information about a type programmatically.
- *
- * Main focus:
- * - Get class object
- * - Use reflection to query information about class object
- * - Create new instance from class object
- *
- * Further study:
- * - You can invoke method through class object!
+Meta mean about itself, so Meta Class mean information describing a Class.
+
+When you write a Class type definition, Java will load it and represent it
+using a special type called "java.lang.Class". Hence it's a type about type (or
+Meta Class)! Given an instance of a "java.lang.Class", you can query a lot of
+information about a type programmatically.
+
+Main focus:
+- Get class object
+- Use reflection to query information about class object
+- Create new instance from class object
+
+Further study:
+- You can invoke method through class object!
  */
 
 import packages.Apple;
