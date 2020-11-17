@@ -64,7 +64,7 @@ public class MultitaskWithThreads {
             int count = 10;
             while (--count > 0) {
                 System.out.println(new Date() + " Updating shared data: " + sharedData.getCounter());
-                sharedData.add(20);
+                sharedData.add(5);
                 pause(300L);
             }
         });
