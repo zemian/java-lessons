@@ -12,6 +12,7 @@
  * Further study:
  * - A Class can only extend ONE parent class
  * - Learn what class encapsulation mean
+ * - Learn to override equals() and hashCode() for custom used by HashMap key
  */
 public class ClassInheritance {
     public static void main(String[] args) {

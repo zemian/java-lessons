@@ -8,6 +8,7 @@
  * - ArrayList and HashMap can can be self-nested!
  *
  * Further study:
+ * - Learn how to use java.util.Set, it's already been used to store HashMap keys!
  * - See more methods available for List at
  *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
  * - See more methods available for Map at
