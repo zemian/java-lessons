@@ -30,6 +30,13 @@ public class PrimitiveWrappers {
         System.out.println(obj4);
 
         // Use their utility methods related to Integer
+        // View constants
+        System.out.println(Integer.MAX_VALUE);
+        // Convert Hex(int) into string of bits (zeros and ones)
         String binaryNum = Integer.toBinaryString(0xAB07);
+        System.out.println(binaryNum);
+        // Convert string to int
+        int inputNum = Integer.parseInt("987");
+        System.out.println(inputNum);
     }
 }
