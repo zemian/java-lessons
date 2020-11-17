@@ -2,10 +2,15 @@
  * Primitive Wrappers are builtin Java classes that represents each of the primitive data type.
  *
  * Main focus:
- * - Wrapper classes provide many static utility methods range from type conversions.
- * - Wrapper classes create data and wraps it in an object.
+ * - Wrapper classes provide many static utility methods range from type conversions
+ * - Wrapper classes create data and wraps it in an object
  * - Java supports autoboxing - assigning literal type values will auto wrap into object
  * - Wrapper object can have "null" value
+ *
+ * Further Study:
+ * - Always use primitive types instead of wrapper unless you have reason for it
+ * - Primitive wrapper are used in Collection Types, which you will learn more later
+ * - It's better NOT to use 'new' keyword on wrapper and use literal autoboxing instead
  */
 public class PrimitiveWrappers {
     public static void main(String[] args) {
