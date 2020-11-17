@@ -46,22 +46,30 @@ public class PrimitiveTypes {
         System.out.println(t);
         System.out.println(c);
 
-        // Array type - a container
-        int[] numbers = {1, 2, 3};
+        // Array type - a container of fixed size and data
+        int[] numbers = {1, 2, 3}; // We call the curly braces array literal initializer
         System.out.println(numbers);
+
+        // Access array elements by zero based index with bracket notation
         System.out.println(numbers[0]);
         System.out.println(numbers[1]);
         System.out.println(numbers[2]);
-        System.out.println(numbers.length);
 
-        int[] bigArray = new int[10_000]; // Holds default value
+        // Get the array size
+        int arraySize = numbers.length;
+        System.out.println(arraySize);
+
+        // You can create array of pre-determined size without data first, then fill it later
+        int size = 10_000; // number can have '_' separator!
+        double[] bigArray = new double[size]; // Holds default value of zero's
         System.out.println(bigArray[0]);
         System.out.println(bigArray[bigArray.length - 1]);
 
-        // ## Operators
+        // ## Four basic math operators: + - * /
+        // it works for all numeric types
         int sum = 99 + 1;
         double sum2 = 1.0 + 2.0;
-        int hex = 0xFF >>> 1;
+        int hex = 0xFF >>> 1; // Shifting bit value one place to the right
         System.out.println(sum);
         System.out.println(sum2);
         System.out.println(hex);
@@ -71,7 +79,7 @@ public class PrimitiveTypes {
         System.out.println(n + 9 - i * d / 5);
         System.out.println(n + (9 - i) * d / 5);
 
-        // A special Class that provide some Math and numbers operations
+        // A special Match object that provide some numeric operations
         double rand = Math.random();
         System.out.println("Random decimal: " + rand);
     }

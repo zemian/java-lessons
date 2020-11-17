@@ -25,6 +25,29 @@ public class ClassInheritance {
         System.out.println(car.getSalesDescription());
         // Note can no longer can call this since Car class does not have this method!
         //System.out.println(car.getNumOfWheels()); // Error
+
+        // Type assignment with inheritance - Parent can store Children
+        // But you can only invoke methods that defined in the parent class!
+        Car car2 = new Truck("Blue", 100_000);
+        System.out.println(car2);
+
+        // In fact you can use Object to hold any object
+        Object car3 = new Truck("Yellow", 99_123);
+        System.out.println(car3);
+
+        // Type casting
+        // You can convert the parent object back to subclass - if you know for sure it's that's type
+        // we call this explicit casting
+        Truck truck3 = (Truck) car3;
+        System.out.println(truck3);
+
+        // Instance type check
+        if (car3 instanceof Car) {
+            System.out.println("car3 is a Car");
+        }
+
+        // Get type name from an object
+        System.out.println(car3.getClass());
     }
 
     public static class Car extends Object {
