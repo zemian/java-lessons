@@ -65,7 +65,7 @@ public class PrimitiveTypes {
         System.out.println(bigArray[0]);
         System.out.println(bigArray[bigArray.length - 1]);
 
-        // ## Four basic math operators: + -/
+        // ## Four basic math operators: + - * /
         // it works for all numeric types
         int sum = 99 + 1;
         double sum2 = 1.0 + 2.0;
@@ -80,8 +80,8 @@ public class PrimitiveTypes {
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
-        System.out.println(n + 9 - id / 5);
-        System.out.println(n + (9 - i)d / 5);
+        System.out.println(n + 9 - i * d / 5);
+        System.out.println(n + (9 - i) * d / 5);
 
         // A special Math object that provide some more numeric operations
         System.out.println(Math.random());         // Random decimal greater or equals to 0.0, but less than 1.0

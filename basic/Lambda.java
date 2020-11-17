@@ -60,13 +60,13 @@ public class Lambda {
         // Working array with stream() receiver - function programming style
         // Note we need a utility method to convert array to stream() first
         int[] numbers = {7, 8, 9};
-        int[] doubleNumbers = java.util.Arrays.stream(numbers).map((num) -> num2).toArray();
+        int[] doubleNumbers = java.util.Arrays.stream(numbers).map((num) -> num * 2).toArray();
         System.out.println(doubleNumbers[0]);
         System.out.println(doubleNumbers[1]);
         System.out.println(doubleNumbers[2]);
 
         // Or if there is only one argument, you don't need parenthesis
-        doubleNumbers = java.util.Arrays.stream(numbers).map(num -> num2).toArray();
+        doubleNumbers = java.util.Arrays.stream(numbers).map(num -> num * 2).toArray();
         System.out.println(doubleNumbers[0]);
     }
 

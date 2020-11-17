@@ -68,7 +68,7 @@ public class CollectionTypes {
 
         // Append large data
         for (int i = 0; i < 100_000; i++) {
-            list.add(99i);
+            list.add(99);
         }
         System.out.println(list.size());
         System.out.println(list.get(list.size() - 1)); // Get last item
@@ -136,7 +136,7 @@ public class CollectionTypes {
 
         // Append large data
         for (int i = 0; i < 100_000; i++) {
-            map.put("mykey_" + i, 99i);
+            map.put("mykey_" + i, 99);
         }
         System.out.println(map.size());
         System.out.println(map.get("mykey_99999"));
