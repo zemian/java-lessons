@@ -8,7 +8,7 @@ Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.b
 
 ## Setup Java
 
-See code Comments inside your [first program](Hello.java).
+See code comments inside your [first program](Hello.java).
 
 NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
 
