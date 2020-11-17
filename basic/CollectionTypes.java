@@ -16,7 +16,7 @@
  * - Learn different syntax on creating List or Map:
  *     List<Integer> list = new ArrayList<>();
  *     Map<String, Integer> map = new HashMap<>();
- * - Learn about immutable List.of(1, 2, 3)
+ * - Learn about immutable List.of(1, 2, 3) or Arrays.asList(1, 2, 3)
  * - Learn about immutable Map.of("foo", 77, "bar", 88)
  *
  * Exercise:
@@ -147,5 +147,26 @@ public class CollectionTypes {
         // Shortcuts on Creating HashMap
         HashMap<String, Integer> quickMap = new HashMap<>(Map.of("foo", 99, "bar", 88));
         System.out.println(quickMap);
+
+        // Print pretty array
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers); // It does not print pretty
+        System.out.println(List.of(numbers)); // It does not print pretty either! - See how variadic capture arguments
+        Integer[] numbers2 = {1, 2, 3};
+        System.out.println(List.of(numbers2)); // It prints pretty! because we use wrapper
+        System.out.println(List.of(1, 2, 3)); // It prints pretty! because variadic capture correctly
+        char[] letters = {'a', 'b', 'c'};
+        System.out.println(letters); // It prints pretty! because println() explicitly handle this type
+
+        // Arrays.asList() vs List.of()
+        // You can't verify this until you learn more about List interface
+        List<Integer> quickList1 = Arrays.asList(1, 2, 3); // Arrays.asList() gives semi-immutable list
+        List<Integer> quickList2 = List.of(1, 2, 3); // List.of() gives completely immutable list.
+        System.out.println(quickList1);
+        System.out.println(quickList2);
+        quickList1.set(0, 99);
+        System.out.println(quickList1);
+//        quickList2.set(0, 88); // Will give Error
+//        System.out.println(quickList2);
     }
 }
