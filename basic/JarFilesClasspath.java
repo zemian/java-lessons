@@ -44,6 +44,10 @@ import packages.Apple;
 //     java -classpath my.jar JarFilesClasspath
 //     java -cp my.jar JarFilesClasspath
 //
+// How to clean up generated files and re-try
+//     rm -v $(find . -name '*.class' -o -name '*.jar')
+//
+//
 // You may also use Ant tool to compile all the java files:
 //
 //     ant build

@@ -10,22 +10,7 @@ Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.b
 
 See code Comments inside your [first program](Hello.java).
 
-## How to compile and run
-
-```
-cd basic
-javac <LessonFileName>.java
-java <LessonFileName>
-```
-
 NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
-
-## How to clean up 
-
-If you want to remove all generated files, try this in terminal:
-
-    cd basic
-    rm -v $(find . -name '*.class' -o -name '*.jar')
 
 ## Learning Path
 
