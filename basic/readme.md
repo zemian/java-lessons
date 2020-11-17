@@ -50,3 +50,4 @@ If you want to remove all generated files, try this in terminal:
 * [Lesson 19 - Lambda](Lambda.java)
 * [Lesson 20 - Generic Type](GenericType.java)
 * [Lesson 21 - Jar Files and Classpath](JarFilesClasspath.java)
+* [Lesson 22 - Meta Class](MetaClass.java)
