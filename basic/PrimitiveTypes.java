@@ -76,6 +76,7 @@ public class PrimitiveTypes {
         int remainder = 100 % 40;
         System.out.println(remainder);
         int hex = 0xFF >>> 1; // Shifting bit value one place to the right
+        System.out.println(hex);
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
