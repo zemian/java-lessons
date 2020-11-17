@@ -13,7 +13,7 @@
  *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html
  * - See more methods available for Map at
  *   https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/HashMap.html
- * - Learn different syntax on creating List or Map:
+ * - Learn different ways on creating List or Map using interface holder:
  *     List<Integer> list = new ArrayList<>();
  *     Map<String, Integer> map = new HashMap<>();
  * - Learn about immutable List.of(1, 2, 3) or Arrays.asList(1, 2, 3)
@@ -94,10 +94,6 @@ public class CollectionTypes {
         ArrayList<Integer> quickList = new ArrayList<>(List.of(8, 6, 9, 3));
         System.out.println(quickList);
 
-        // Sort elements in list
-        Collections.sort(quickList);
-        System.out.println("sorted quickList: " + quickList);
-
         //
         // HashMap
         //
@@ -152,6 +148,11 @@ public class CollectionTypes {
         HashMap<String, Integer> quickMap = new HashMap<>(Map.of("foo", 99, "bar", 88));
         System.out.println(quickMap);
 
+
+        //
+        // Extra collection related topics
+        //
+
         // Print pretty array
         int[] numbers = {1, 2, 3};
         System.out.println(numbers); // It does not print pretty
@@ -172,5 +173,27 @@ public class CollectionTypes {
         System.out.println(quickList1);
 //        quickList2.set(0, 88); // Will give Error
 //        System.out.println(quickList2);
+
+        // Sort elements in list
+        Collections.sort(quickList);
+        System.out.println("sorted quickList: " + quickList);
+
+        // Set - Unique set of items
+        HashSet<String> set = new HashSet<>();
+        set.add("foo");
+        set.add("bar");
+        System.out.println(set);
+        set.add("foo"); // Nothing will happens since we already have one exists!
+        System.out.println(set.contains("foo"));
+        System.out.println(set.size());
+        System.out.println(set.remove("foo"));
+        // You can't access element by index, you need to iterate through them
+        System.out.println(set.iterator().next());
+        // If you need element by index, convert them into list first
+        System.out.println((new ArrayList(set)).get(0));
+
+        // Getting HashMap keys requires a generic set (interface)
+        Set<String> keys = map.keySet();
+        System.out.println(keys);
     }
 }
