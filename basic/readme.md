@@ -6,6 +6,19 @@ NOTE: It's important to learn the basic of Java using a plain text editor instea
 
 Java 11 API Reference: https://docs.oracle.com/en/java/javase/11/docs/api/java.base/module-summary.html
 
+## Goal
+
+I want to introduce Java programming to beginners as quickly as possible. The lessons are short and with
+the essential **Main focus** topics that cover common use cases. The main topics will contain working
+example code in each lesson. There are also **Further Study** notes to help students to research more
+on related topics on their own.
+
+After these lessons, the students should able to understand basic of Java programming language and be
+able to read existing code and write simple program on their own.
+
+There are many Java programming patterns and techniques that goes beyong the basic syntax. You may
+want to explore some [Common Tasks](../commontasks) folders for more.
+
 ## Setup Java
 
 See code comments inside your [first program](Hello.java).
