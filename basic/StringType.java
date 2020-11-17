@@ -42,7 +42,7 @@ public class StringType {
 
         // Split and join
         String[] words = "one two three".split(" ");
-        System.out.println(java.util.Arrays.asList(words));
+        System.out.println(java.util.Arrays.asList(words)); // Pretty print array
         String line = String.join("|", words);
         System.out.println(line);
     }
