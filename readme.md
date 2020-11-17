@@ -6,10 +6,10 @@ Notes for teaching Java programming language.
 
 There is a readme file in each folder for further instruction.
 
-* [basic](basic) - Learn the basic Java programming language syntax and construct
-* [commontasks](commontasks) - Learn how to do some common tasks with the Java language
-* [maven-hello-java](maven-hello-java) - Learn how to use Maven build tool
-* [ant-hello-java](ant-hello-java) - Learn how to use Ant build tool
+* [Basic Java Programming](basic) - Learn the basic Java programming language syntax and construct
+* [Common Tasks in Java](commontasks) - Learn how to do some common tasks with the Java language
+* [Maven Build Tool](maven-hello-java) - Learn how to use Maven build tool
+* [Ant Build Tool](ant-hello-java) - Learn how to use Ant build tool
 
 ## Recommended Text Editors and IDEs
 
