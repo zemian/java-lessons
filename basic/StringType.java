@@ -37,6 +37,13 @@ public class StringType {
         // Array of empty null values
         String[] names = new String[10]; // Holds null values!
         System.out.println(names[0]);
-        System.out.println(names[0].length()); // NullPointerException!
+        //System.out.println(names[0].length()); // ERROR: Element is null - hence NullPointerException!
+        System.out.println(names.length); // Array length is valid
+
+        // Split and join
+        String[] words = "one two three".split(" ");
+        System.out.println(java.util.Arrays.asList(words));
+        String line = String.join("|", words);
+        System.out.println(line);
     }
 }
