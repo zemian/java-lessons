@@ -66,6 +66,7 @@ public class StringType {
         }
 
         // Match with regular expression of '\w+'
+        // Note that we need to escape '\' character in string.
         if (a.matches("\\w+")) {
             System.out.println("Match found!");
         }
