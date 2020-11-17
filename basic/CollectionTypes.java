@@ -91,8 +91,12 @@ public class CollectionTypes {
         System.out.println(java.util.Arrays.asList(arrayAgain)); // Now it's readable
 
         // Shortcuts on Creating ArrayList
-        ArrayList<Integer> quickList = new ArrayList<>(List.of(9, 8, 7));
+        ArrayList<Integer> quickList = new ArrayList<>(List.of(8, 6, 9, 3));
         System.out.println(quickList);
+
+        // Sort elements in list
+        Collections.sort(quickList);
+        System.out.println("sorted quickList: " + quickList);
 
         //
         // HashMap
