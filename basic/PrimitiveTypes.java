@@ -69,18 +69,29 @@ public class PrimitiveTypes {
         // it works for all numeric types
         int sum = 99 + 1;
         double sum2 = 1.0 + 2.0;
-        int hex = 0xFF >>> 1; // Shifting bit value one place to the right
         System.out.println(sum);
         System.out.println(sum2);
-        System.out.println(hex);
+
+        // Other special numeric operators
+        int remainder = 100 % 40;
+        System.out.println(remainder);
+        int hex = 0xFF >>> 1; // Shifting bit value one place to the right
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
         System.out.println(n + 9 - i * d / 5);
         System.out.println(n + (9 - i) * d / 5);
 
-        // A special Match object that provide some numeric operations
-        double rand = Math.random();
-        System.out.println("Random decimal: " + rand);
+        // A special Math object that provide some more numeric operations
+        System.out.println(Math.random());         // Random decimal greater or equals to 0.0, but less than 1.0
+        System.out.println(Math.floor(1.5123));    // => 1.0
+        System.out.println(Math.ceil(1.5123));     // => 2.0
+        System.out.println(Math.min(1, 2));        // => 1
+        System.out.println(Math.max(1, 2));        // => 2
+        System.out.println(Math.abs(-1));          // => 1
+        System.out.println(Math.pow(2, 8));        // 2 to the power of 8 => 256
+        System.out.println(Math.cos(Math.PI / 2)); // Calc trignometric cosine of angle in radian unit
+        System.out.println(Math.sin(Math.PI / 2));
+        System.out.println(Math.tan(Math.PI / 2));
     }
 }
