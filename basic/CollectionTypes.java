@@ -18,6 +18,7 @@
  *     Map<String, Integer> map = new HashMap<>();
  * - Learn about immutable List.of(1, 2, 3) or Arrays.asList(1, 2, 3)
  * - Learn about immutable Map.of("foo", 77, "bar", 88)
+ * - Explore how Object.equals() and Object.hashCode() affect HashMap keys.
  *
  * Exercise:
  * 1. Process args and filter out ones starts with "-"
