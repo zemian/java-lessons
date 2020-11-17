@@ -76,12 +76,19 @@ public class ControlStatements {
             System.out.println(strange); // Output: 0.30000000000000004
         }
 
-        // For Loop - repeat
+        // Repeating code with While Loop under a condition
+        int counter = 0;
+        while (counter < 3) {
+            System.out.println(Math.random()); // Print random decimal between 0.0 and 1.0
+            counter++;
+        }
+
+        // For Loop - more compact than while
         for (int i = 0; i < 3; i++) {
             System.out.println(i);
         }
 
-        // Array Loop
+        // For loop is commonly used to iterate over collection data (array, list or map etc)
         int [] numbers = {7, 8, 9};
         for (int i = 0; i < 3; i++) {
             int value = numbers[i];
@@ -91,13 +98,6 @@ public class ControlStatements {
         // For Each Loop (with value directly without index counter)
         for (int value : numbers) {
             System.out.println(value);
-        }
-
-        // While Loop
-        int counter = 0;
-        while (counter < 3) {
-            System.out.println(Math.random()); // Print random decimal between 0.0 and 1.0
-            counter++;
         }
     }
 }
