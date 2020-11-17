@@ -70,5 +70,9 @@ public class PrimitiveTypes {
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
         System.out.println(n + 9 - i * d / 5);
         System.out.println(n + (9 - i) * d / 5);
+
+        // A special Class that provide some Math and numbers operations
+        double rand = Math.random();
+        System.out.println("Random decimal: " + rand);
     }
 }

@@ -106,6 +106,13 @@ public class ExceptionHandling {
         } catch (IOException e) {
             System.out.println("Failed to read file " + file);
         }
+
+        // Another common method that requires handle error
+        try {
+            Thread.sleep(1000L);
+        } catch (InterruptedException e) {
+            System.out.println("Unable to sleep 1 sec.");
+        }
     }
 
     public static class BadNumberException extends Exception {
