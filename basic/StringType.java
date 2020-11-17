@@ -9,6 +9,7 @@
  * Further study:
  * - Learn some common String function/methods you can use from the API
  * - Learn more on java.util.Arrays class and it's methods from the API
+ * - Learn more about Java regular expression
  *
  * Exercises:
  * 1. What happen when you call "dot" methods on a null value?
@@ -17,7 +18,7 @@
  */
 public class StringType {
     public static void main(String[] args) {
-        // # Builtin String Object type
+        // # Builtin String object literal and its methods usage
         String str = "foo";
         System.out.println(str);
         System.out.println(str + " bar"); // Use of (+) concatenation operator
@@ -26,6 +27,18 @@ public class StringType {
         System.out.println(str.substring(0, 2));
         System.out.println(str.indexOf("o"));
 
+        // String can hold a special value called "null"
+        // If you assign this value, it can not invoke any of the "dot" operations
+        String str2 = null;
+        System.out.println(str2);
+        //System.out.println(str2.length()); // ERROR: NullPointerException!
+
+        // Java String need scape on certain characters
+        String special = "That's one good \"string\" that ends with \\n character\n.";
+        System.out.println(special);
+        // It should prints: That's one good "string" that ends with \n character
+
+        // Convert string to char array
         char[] characters = str.toCharArray(); // Get the data under string
         System.out.println(characters[0]);
 
@@ -34,7 +47,7 @@ public class StringType {
         System.out.println(array);
         System.out.println(array[0]);
 
-        // Array of empty null values
+        // Array of fixed size Strings with default null values
         String[] names = new String[10]; // Holds null values!
         System.out.println(names[0]);
         //System.out.println(names[0].length()); // ERROR: Element is null - hence NullPointerException!
@@ -45,5 +58,16 @@ public class StringType {
         System.out.println(java.util.Arrays.asList(words)); // Pretty print array
         String line = String.join("|", words);
         System.out.println(line);
+
+        // Compare strings
+        String a = "foo";
+        if (a.equals("foo")) {
+            System.out.println("String a is a 'foo'");
+        }
+
+        // Match with regular expression of '\w+'
+        if (a.matches("\\w+")) {
+            System.out.println("Match found!");
+        }
     }
 }
