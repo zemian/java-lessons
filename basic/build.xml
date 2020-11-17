@@ -1,5 +1,8 @@
+<!--
+basic - project
+A build script to compile all *.java files in current directory
+-->
 <project name="basic" default="build" basedir=".">
-
     <property name="project.version" value="1.0"/>
     <property name="jdk.version" value="11"/>
     <property name="src" location="${basedir}"/>
