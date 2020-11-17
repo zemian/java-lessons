@@ -3,12 +3,17 @@
  * and speed up certain type of operations.
  *
  * Main focus:
- * - Show how two threads can start
- * - Show how to add custom code to the run per Thread
+ * - How two threads can start
+ * - How to add custom code to the run per Thread
+ * - How to synchronized keyword to prevent data corruption
  *
  * Further study:
- * - Learn how to synchronize and volatile keywords to prevent data corruption
+ * - Do not use deprecated Thread.start()/Thread.stop()
+ * - Learn how you can control the stopping of a running thread
+ * - You can synchronized on a object instance!
+ * - Explore volatile keyword and compare to synchronized
  * - Learn about thread pool
+ * - Learn more about "java.util.concurrent" package
  */
 
 import java.util.Date;
@@ -16,18 +21,15 @@ import java.util.Date;
 public class MultitaskWithThread {
     public static void main(String[] args) {
 
-        // Create a new thread that can run some code using a java.lang.Runnable interface
+        // Topic1: Running multiple threads concurrently
+        // Create two Thread objects that can run some code using a java.lang.Runnable interface
         Thread task1 = new Thread(new Runnable() {
             @Override
             public void run() {
                 int count = 10;
                 while (--count > 0) {
-                    System.out.println(new Date() + "Task 1 is running");
-                    try {
-                        Thread.sleep(300L);
-                    } catch (InterruptedException e) {
-                        throw new RuntimeException("Failed to sleep");
-                    }
+                    System.out.println(new Date() + " Task 1 is running");
+                    pause(300L);
                 }
             }
         });
@@ -36,17 +38,57 @@ public class MultitaskWithThread {
         Thread task2 = new Thread(() -> {
             int count = 10;
             while (--count > 0) {
-                System.out.println(new Date() + "Task 2 is running");
-                try {
-                    Thread.sleep(300L);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException("Failed to sleep");
-                }
+                System.out.println(new Date() + " Task 2 is running");
+                pause(300L);
             }
         });
 
         // Now start the threads and let them run concurrently
         task1.start();
         task2.start();
+
+        //
+        // Topic2:
+        // Using "synchronized" keyword to protect share data example
+        //
+        MySharedData sharedData = new MySharedData();
+        Thread task3 = new Thread(() -> {
+            int count = 10;
+            while (--count > 0) {
+                System.out.println(new Date() + " Updating shared data: " + sharedData.getCounter());
+                sharedData.add(10);
+                pause(300L);
+            }
+        });
+        Thread task4 = new Thread(() -> {
+            int count = 10;
+            while (--count > 0) {
+                System.out.println(new Date() + " Updating shared data: " + sharedData.getCounter());
+                sharedData.add(20);
+                pause(300L);
+            }
+        });
+        task3.start();
+        task4.start();
+    }
+
+    public static void pause(long millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            throw new RuntimeException("Failed to sleep");
+        }
+    }
+
+    public static class MySharedData {
+        private int counter = 0;
+
+        public int getCounter() {
+            return counter;
+        }
+
+        synchronized public void add(int value) {
+            this.counter = this.counter + value;
+        }
     }
 }
