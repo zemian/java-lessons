@@ -29,8 +29,8 @@ NOTE: Some lessons might have additional compilation steps. See the code comment
 
 * [Lesson 1 - Hello World](Hello.java)
 * [Lesson 2 - Primitive Types](PrimitiveTypes.java)
-* [Lesson 3 - String Type](StringType.java)
-* [Lesson 4 - Control Statements](ControlStatements.java)
+* [Lesson 3 - Control Statements](ControlStatements.java)
+* [Lesson 4 - String Type](StringType.java)
 * [Lesson 5 - Functions](Functions.java)
 * [Lesson 6 - Functions Group by Class](FunctionsGroupByClass.java)
 * [Lesson 7 - Class Type Definition](ClassTypeDefinition.java)
