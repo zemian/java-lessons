@@ -18,7 +18,7 @@
 
 import java.util.Date;
 
-public class MultitaskWithThread {
+public class MultitaskWithThreads {
     public static void main(String[] args) {
 
         // Topic1: Running multiple threads concurrently

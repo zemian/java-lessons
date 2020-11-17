@@ -36,4 +36,4 @@ NOTE: Some lessons might have additional compilation steps. See the code comment
 * [Lesson 20 - Generic Type](GenericType.java)
 * [Lesson 21 - Jar Files and Classpath](JarFilesClasspath.java)
 * [Lesson 22 - Meta Class](MetaClass.java)
-* [Lesson 23 - Multitask With Thread](MultitaskWithThread.java)
+* [Lesson 23 - Multitask With Threads](MultitaskWithThreads.java)
