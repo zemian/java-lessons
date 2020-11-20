@@ -46,6 +46,10 @@ public class Interface {
         Map<String, Integer> map = new HashMap<>();
         System.out.println(list);
         System.out.println(map);
+
+        // Test another interface
+        Navigation test = new Car();
+        System.out.println(test.getCurrentLocation());
     }
 
     public static Engine createEngine(String type) {
@@ -84,7 +88,7 @@ public class Interface {
         }
     }
 
-    public static class Boat implements Engine, Navigation {
+    public static class Boat implements Engine {
 
         @Override
         public void start() {
@@ -94,11 +98,6 @@ public class Interface {
         @Override
         public void stop() {
             System.out.println("Stopping car");
-        }
-
-        @Override
-        public String getCurrentLocation() {
-            return "123 Abc St";
         }
     }
 }
