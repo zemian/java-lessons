@@ -93,5 +93,32 @@ public class ControlStatements {
         for (int value : numbers) {
             System.out.println(value);
         }
+
+        // Ternary Operator - it's a expression that's short for if/else.
+        // You can use it for assignment. Note that you can't assign if/else into variable,
+        // but ternary operator can!
+        String answer = (a < b) ? "yes" : "no";
+        System.out.println(answer);
+
+        // Switch statement
+        String userInput = (args.length > 0) ? args[0] : "no";
+        switch (userInput) { // You can also switch any numeric type or Enum!
+            case "yes":
+                System.out.println("User input entered YES.");
+                System.out.println("You are the yes person.");
+                break;
+            case "no":
+                System.out.println("You entered NO.");
+                System.out.println("Or you could be didn't enter any value at all.");
+                break;
+            default:
+                System.out.println("Wrong answer.");
+        }
+
+        // Do While
+        int count = 0;
+        do {
+            System.out.println(count + " Action first, ask later.");
+        } while (++count < 3);
     }
 }

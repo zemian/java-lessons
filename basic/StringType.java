@@ -38,7 +38,12 @@ public class StringType {
         System.out.println(special);
         // It should prints: That's one good "string" that ends with \n character
 
-        // Convert string to char array
+        // Create String from char[] array
+        char[] letters = {'h', 'e', 'l', 'l', 'o'};
+        String word = new String(letters);
+        System.out.println(word);
+
+        // Convert String to char[] array
         char[] characters = str.toCharArray(); // Get the data under string
         System.out.println(characters[0]);
 
@@ -70,5 +75,14 @@ public class StringType {
         if (a.matches("\\w+")) {
             System.out.println("Match found!");
         }
+
+        // String is immutable, so you have to so lot of concatenation that build new String.
+        // If you do this often, then its' not efficient. Luckily, Java has StringBuilder
+        StringBuilder strBuilder = new StringBuilder();
+        for (int i = 0; i < 3; i++) {
+            strBuilder.append("Test#").append(i).append("\n");
+        }
+        String strFinal = strBuilder.toString();
+        System.out.println(strFinal);
     }
 }

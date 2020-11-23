@@ -35,7 +35,7 @@ public class PrimitiveTypes {
         float f = 3.14f;
         double d = 3.14159265358979323846264338327950288419716939937510;
         boolean t = true;
-        char c = '\uffff';
+        char c = 'A';
 
         System.out.println(b);
         System.out.println(s);
@@ -77,6 +77,21 @@ public class PrimitiveTypes {
         System.out.println(remainder);
         int hex = 0xFF >>> 1; // Shifting bit value one place to the right
         System.out.println(hex);
+
+        // Char type are for single character, but they are actually numeric with ascii code value
+        char firstLetter = 'A';
+        System.out.println(firstLetter);
+        firstLetter = (char)(firstLetter + 1); // cast is needed because " + 1" turns it into int type.
+        System.out.println(firstLetter);
+
+        // Char can hold outside of letter or plain ASCII value that assign with Unicode value
+        char oddChar = '\uffff';
+        System.out.println(oddChar);
+
+        // Byte is a small int -128 to 127, but it the value it holds is actually used to
+        // represents binary value. Think of it as 8 bit binary data type.
+        byte[] binary = {-0x80, 0x0A, 0x0B, 0x0C, 0x7F};
+        System.out.println(binary);
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
