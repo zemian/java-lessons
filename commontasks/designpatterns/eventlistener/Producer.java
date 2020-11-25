@@ -1,4 +1,4 @@
-package eventlistener;
+package designpatterns.eventlistener;
 
 public class Producer {
     public Consumer consumer;

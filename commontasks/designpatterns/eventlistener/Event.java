@@ -1,4 +1,4 @@
-package eventlistener;
+package designpatterns.eventlistener;
 
 import java.util.ArrayList;
 import java.util.List;
