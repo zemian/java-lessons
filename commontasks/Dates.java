@@ -1,4 +1,3 @@
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -20,13 +19,17 @@ public class Dates {
         Date today2 = new Date(); // Same as above
 
         // Display date string in "Wed Nov 25 11:28:05 EST 2020" format
-        System.out.println(today);
+        System.out.println("today " + today);
 
         // Date to epoch conversion
-        System.out.println(today2.getTime());
+        System.out.println("today2 epoch time " + today2.getTime());
 
         // Epoch date - Zero epoch time
         System.out.println("Epoch date " + new Date(0));
+
+        // Date operations
+        Date tomorrow = new Date(today.getTime() + 24 * 60 * 60 * 1000L);
+        System.out.println("tomorrow " + tomorrow);
 
         // Display date object in other custom format
         SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -51,8 +54,5 @@ public class Dates {
             Date thanksgivingDate = cal2.getTime();
             System.out.println("Thanksgiving: " + thanksgivingDate);
         }
-
-
-
     }
 }
