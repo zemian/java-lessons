@@ -49,6 +49,7 @@ public class PrimitiveTypes {
         // Array type - a container of fixed size and data
         int[] numbers = {1, 2, 3}; // We call the curly braces array literal initializer
         System.out.println(numbers);
+        System.out.println(java.util.Arrays.toString(numbers)); // How to print array nicely
 
         // Access array elements by zero based index with bracket notation
         System.out.println(numbers[0]);
@@ -91,7 +92,7 @@ public class PrimitiveTypes {
         // Byte is a small int -128 to 127, but it the value it holds is actually used to
         // represents binary value. Think of it as 8 bit binary data type.
         byte[] binary = {-0x80, 0x0A, 0x0B, 0x0C, 0x7F};
-        System.out.println(binary);
+        System.out.println(java.util.Arrays.toString(binary));
 
         // ## Operator Precedence
         // https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html
