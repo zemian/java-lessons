@@ -1,5 +1,5 @@
 /*
-Java 8 primitive types
+Java has 8 primitive types.
 
 Main focus:
 - There 4 main types: int, double, boolean, and char
