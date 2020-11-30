@@ -9,11 +9,6 @@ Main focus:
 - Block of code can be repeated or skipped.
 
 Further study:
-- Learn about "switch" control statement (alternate to like if/elseif/else)
-- Learn about "do-while" loop
-- Learn about "continue" and "break" in loop
-
-More Ref:
 - https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html
 
 Exercise:
@@ -23,30 +18,8 @@ Exercise:
  */
 public class ControlStatements {
     public static void main(String[] args) {
-        // Shortcut - increment/decrement operators
-        int n = 0;
-        System.out.println(n);
-        n = n + 1;
-        System.out.println(n);
-        n++;
-        System.out.println(n);
-        n--;
-        System.out.println(n);
-
-        // More fancier operator
-        n = n + 5;
-        System.out.println(n);
-        n += 5;
-        System.out.println(n);
-
-        // Comparison & Boolean Result
-        int a = 1, b = 3;
-        boolean compareResult = a < b;
-        System.out.println(compareResult);
-        System.out.println(a == b);
-        System.out.println(a >= b);
-
         // Condition Code Branching
+        int a = 1, b = 3;
         if (a < b) {
             System.out.println("Condition is true");
         } else {
@@ -138,5 +111,7 @@ public class ControlStatements {
         do {
             System.out.println(count + " Action first, ask later.");
         } while (++count < 3);
+
+        // You may also use "break" and "continue" to while loop as well!
     }
 }

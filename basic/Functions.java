@@ -1,7 +1,7 @@
 /*
 Function - Reusable Code
 
-Function is for grouping reusable statements into a unit that we can invoke
+Function (or method) is for grouping reusable statements into a unit that we can invoke
 together.
 
 Further study:
