@@ -1,0 +1,8 @@
+name: HelloWorldPlugin
+version: 1.0
+api-version: 1.15
+main: zemian.minecraft.helloworldplugin.HelloWorldPlugin
+
+commands:
+  hello:
+    description: My First Hello World Minecraft Plugin.
