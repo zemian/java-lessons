@@ -89,6 +89,24 @@ public class ControlStatements {
             System.out.println(value);
         }
 
+        // You can break a for loop - exit early
+        for (int i = 0; i < 3; i++) {
+            int value = numbers[i];
+            if (value % 2 == 0) {
+              System.out.println(value);
+              break; // Exit early
+            }
+        }
+
+        // You can jump to next iteration of loop forcefully using "continue"
+        for (int i = 0; i < 3; i++) {
+            int value = numbers[i];
+            if (value % 2 == 0) {
+              System.out.println(value);
+              continue; // Exit early
+            }
+        }
+
         // For Each Loop (with value directly without index counter)
         for (int value : numbers) {
             System.out.println(value);
