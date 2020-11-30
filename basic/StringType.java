@@ -10,6 +10,7 @@ Further study:
 - Learn some common String function/methods you can use from the API
 - Learn more on java.util.Arrays class and it's methods from the API
 - Learn more about Java regular expression
+- Learn more about Locale String Formatting
 
 Exercises:
 1. What happen when you call "dot" methods on a null value?
@@ -84,5 +85,33 @@ public class StringType {
         }
         String strFinal = strBuilder.toString();
         System.out.println(strFinal);
+
+        // Converting String to other types
+
+        // Convert string to int
+        int inputNum = Integer.parseInt("987");
+        System.out.println(inputNum);
+        System.out.println(Double.parseDouble("3.14"));
+        System.out.println(Boolean.valueOf("true"));
+
+        // Int to string is easy and can be used with concatenate
+        String strNum = "" + 123;
+        System.out.println(strNum);
+
+        // Convert Hex(int) into String of bits (zeros and ones)
+        String binaryNum = Integer.toBinaryString(0xAB07);
+        System.out.println(binaryNum);
+
+        // String formatting
+        String output = String.format("Hello %s", "World");
+        System.out.println(output);
+        System.out.println(String.format("Hello %50s", "World"));
+        System.out.println(String.format("Score %d", 9_000));
+        System.out.println(String.format("Score %50d", 9_000));
+        System.out.println(String.format("Score %-50d", 9_000));
+        System.out.println(String.format("Price %f", 1_234.99));
+        System.out.println(String.format("Price %.2f", 1_234.99));
+        System.out.println(String.format("Price %50.2f", 1_234.99));
+        System.out.println(String.format("Price %50.2f", .99));
     }
 }
