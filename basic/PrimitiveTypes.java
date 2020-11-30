@@ -15,6 +15,8 @@ Further study:
 Exercise:
 1. Find the min and max value of each data type range.
 2. What will happen if you increase int beyond it's max limit?
+3. Create an area formula expression with variables and calculate the result
+3. Create an quadratic formula expression with variables and calculate the result
  */
 public class PrimitiveTypes {
     public static void main(String[] args) {
