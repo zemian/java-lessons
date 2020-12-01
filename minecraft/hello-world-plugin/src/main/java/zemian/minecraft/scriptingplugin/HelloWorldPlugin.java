@@ -1,4 +1,4 @@
-package zemian.minecraft.helloworldplugin;
+package zemian.minecraft.scriptingplugin;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

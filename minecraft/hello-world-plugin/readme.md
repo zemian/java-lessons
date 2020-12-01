@@ -8,7 +8,7 @@ To build and install this plugin, you need the following:
 2. Download and install Minecraft Server from https://www.spigotmc.org
 3. Build this project jar using `mvn package` command
 4. Copy the `target/hello-world-plugin-1.0-SNAPSHOT.jar` into your server plugin directory.
-5. Starter your server
+5. Starter your server with `java -jar spigot-1.15.2.jar`
 6. Connect Minecraft client to your server
 7. Test your plugin "hello" command
 
@@ -57,3 +57,13 @@ at https://files.minecraftforge.net/
 * https://en.wikipedia.org/wiki/Minecraft
 * https://www.tutorialspoint.com/yaml/yaml_basics.htm
 * https://www.spigotmc.org/wiki/what-is-spigot-craftbukkit-bukkit-vanilla-forg/
+
+## Java Remote Debugging
+
+Add the following to the java command options where you startup Spigot MC server:
+
+```
+-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=*:5005
+```
+
+Now you may use your IDE to attach a "Remote Debug" session to the server!
