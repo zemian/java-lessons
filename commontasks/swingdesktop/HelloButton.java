@@ -3,7 +3,7 @@ package swingdesktop;
 import javax.swing.*;
 
 // Modified version of: https://docs.oracle.com/javase/tutorial/uiswing/examples/start/HelloWorldSwingProject/src/start/HelloWorldSwing.java
-// More examples here: https://docs.oracle.com/javase/tutorial/uiswing/examples/learn/index.html
+// More examples here: https://docs.oracle.com/javase/tutorial/uiswing/examples/components/index.html
 public class HelloButton {
     public static void main(String[] args) {
         //Schedule a job for the event-dispatching thread:
