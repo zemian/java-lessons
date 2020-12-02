@@ -9,9 +9,13 @@ There is a readme file in each folder for further instruction.
 * [Basic Java Programming](basic) - Learn the basic Java programming language syntax and construct
 * [Common Tasks in Java](commontasks) - Learn how to do some common tasks with the Java language
 * [Maven Build Tool](maven-hello-java) - Learn how to use Maven build tool
-  (There is also a [Ant Build Tool](ant-hello-java) example should you want to learn an alternative
-  build tool. There is also a [Gradle](https://gradle.org/) that's gaining popularity as well)
-* [MineCraft](minecraft) - Learn how to build Minecraft plugins using Java!
+  
+Want some more? Here some curated topics that might interest you:
+
+* [MineCraft](topics/minecraft) - Learn how to build Minecraft plugins using Java!
+* [Desktop GUI](topics/swingdesktop) - Learn how to build Desktop & GUI application using Java!
+* [Computer Science & Algorithm](topics/algorithm) - Explore some search & sorting algorithms using Java!
+* [Design Patterns](topics/designpatterns) - Explore some common design patterns using Java!
 
 ## Install and Setup Java Development Kit (JDK)
 
