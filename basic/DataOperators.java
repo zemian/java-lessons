@@ -73,6 +73,12 @@ public class DataOperators {
         System.out.println(a == b);
         System.out.println(a >= b);
 
+        // Note: do not compare equality on double values as it can't be exact!
+        double d1 = 0.1, d2 = 0.2;
+        if (d1 + d2 == 0.3) { // DO NOT DO THIS!
+          System.out.println("You will not see this!");
+        }
+
         // Logical operator
         boolean compareResult2 = a < 90 && a > 10;
         boolean compareResult3 = a < 90 || a > 10; // can short-circuit!
