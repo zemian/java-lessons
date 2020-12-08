@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/basic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/commontasks" isTestSource="false" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="15" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
