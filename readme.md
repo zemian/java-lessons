@@ -21,7 +21,7 @@ Want some more? Here some curated topics that might interest you:
 
 See instructions in [here](basic/Hello.java).
 
-## Recommended Text Editor and IDE
+## Recommended (Free) Text Editor and IDE
 
 You are free to use any editor you like. But here are my recommendation:
 
@@ -31,6 +31,15 @@ Only after you master the basic, then you should use an IDE to speedup productiv
 Text Editor: [Atom Editor](https://atom.io/)
 
 Full IDE: [JetBrains IDEA IntelliJ - Community Version](https://www.jetbrains.com/idea/download/)
+
+More editors to explore:
+
+* https://www.sublimetext.com/
+* https://notepad-plus-plus.org/downloads/
+* https://www.vim.org/
+* https://code.visualstudio.com/
+* https://www.eclipse.org/
+* https://netbeans.apache.org/
 
 ## Reading List
 
