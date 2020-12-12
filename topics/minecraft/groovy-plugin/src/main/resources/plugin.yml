@@ -1,8 +1,0 @@
-name: GroovyScriptingPlugin
-version: 1.0
-api-version: 1.15
-main: zemian.minecraft.groovyplugin.GroovyScriptingPlugin
-
-commands:
-  groovy:
-    description: Use Groovy Scripting for MC plugin dev.
