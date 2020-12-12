@@ -3,13 +3,12 @@ package zemian.minecraft.javascriptplugin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.mozilla.javascript.Context;
-import org.mozilla.javascript.Scriptable;
-import org.mozilla.javascript.ScriptableObject;
 
+import javax.script.Bindings;
+import javax.script.ScriptEngine;
+import javax.script.ScriptEngineManager;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 
 public class JavaScriptCommand implements CommandExecutor {
     @Override
@@ -21,24 +20,20 @@ public class JavaScriptCommand implements CommandExecutor {
         File file = new File(mcScript);
         System.out.println("Executing JavaScript: " + file);
 
-        Context cx = Context.enter();
+        ScriptEngineManager factory = new ScriptEngineManager();
+        ScriptEngine engine = factory.getEngineByName("nashorn");
         try {
-            Scriptable scope = cx.initStandardObjects();
-            ScriptableObject.putProperty(scope, "sender", Context.javaToJS(sender, scope));
-            ScriptableObject.putProperty(scope, "command", Context.javaToJS(command, scope));
-            ScriptableObject.putProperty(scope, "label", Context.javaToJS(label, scope));
-            ScriptableObject.putProperty(scope, "strings", Context.javaToJS(strings, scope));
+            Bindings bindings = engine.createBindings();
+            bindings.put("sender", sender);
+            bindings.put("command", command);
+            bindings.put("label", label);
+            bindings.put("strings", strings);
 
             try (FileReader reader = new FileReader(file)) {
-                cx.evaluateReader(scope, reader, mcScript, 1, null);
-                //Object result = cx.evaluateReader(scope, reader, mcScript, 1, null);
-                // Convert the result to a string and print it.
-                //System.out.println(Context.toString(result));
+                engine.eval(reader, bindings);
             }
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException("Failed to run JavaScript", e);
-        } finally {
-            cx.exit();
         }
         return false;
     }
