@@ -1,8 +1,8 @@
 name: JavaScriptPlugin
 version: 1.0
 api-version: 1.15
-main: zemian.minecraft.scriptingplugin.JavaScriptPlugin
+main: zemian.minecraft.javascriptplugin.JavaScriptPlugin
 
 commands:
-  groovy:
+  js:
     description: Use JavaScript for MC plugin dev.

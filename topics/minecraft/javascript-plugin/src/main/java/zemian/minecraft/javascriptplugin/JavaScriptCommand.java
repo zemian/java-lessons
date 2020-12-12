@@ -1,4 +1,4 @@
-package zemian.minecraft.scriptingplugin;
+package zemian.minecraft.javascriptplugin;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -14,14 +14,14 @@ import java.io.IOException;
 public class JavaScriptCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] strings) {
-        Context cx = Context.enter();
-
         String mcScript = System.getProperty("user.home") + "/mc.js";
         if (strings.length > 0) {
             mcScript = strings[0];
         }
         File file = new File(mcScript);
         System.out.println("Executing JavaScript: " + file);
+
+        Context cx = Context.enter();
         try {
             Scriptable scope = cx.initStandardObjects();
             ScriptableObject.putProperty(scope, "sender", Context.javaToJS(sender, scope));
@@ -30,9 +30,10 @@ public class JavaScriptCommand implements CommandExecutor {
             ScriptableObject.putProperty(scope, "strings", Context.javaToJS(strings, scope));
 
             try (FileReader reader = new FileReader(file)) {
-                Object result = cx.evaluateReader(scope, reader, mcScript, 1, null);
+                cx.evaluateReader(scope, reader, mcScript, 1, null);
+                //Object result = cx.evaluateReader(scope, reader, mcScript, 1, null);
                 // Convert the result to a string and print it.
-                System.out.println(Context.toString(result));
+                //System.out.println(Context.toString(result));
             }
         } catch (IOException e) {
             throw new RuntimeException("Failed to run JavaScript", e);
