@@ -1,6 +1,8 @@
 # java-lessons
 
-Notes for teaching Java programming language.
+This project contains notes for teaching Java programming language.
+
+NOTE: All example and source code here are intended for Java version 11 (LTS) or higher.
 
 ## Install and Setup Java Development Kit (JDK)
 

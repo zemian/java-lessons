@@ -1,4 +1,4 @@
-<project name="hello-ant" default="build" basedir=".">
+<project name="ant-hello-java" default="build" basedir=".">
 
     <property name="project.version" value="1.0"/>
     <property name="jdk.version" value="11"/>

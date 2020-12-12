@@ -1,4 +1,4 @@
-package com.zemian.hellojava;
+package zemian.mavenhellojava;
 
 /**
  * Hello world!
