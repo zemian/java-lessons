@@ -7,7 +7,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 import java.io.File;
-import java.io.IOException;
 
 public class GroovyCommand implements CommandExecutor {
     @Override
@@ -27,7 +26,7 @@ public class GroovyCommand implements CommandExecutor {
         GroovyShell shell = new GroovyShell(binding);
         try {
             shell.evaluate(file);
-        } catch (IOException e) {
+        } catch (Exception e) {
             throw new RuntimeException("Failed to run Groovy", e);
         }
 
