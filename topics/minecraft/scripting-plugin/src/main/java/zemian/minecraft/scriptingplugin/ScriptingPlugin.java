@@ -5,6 +5,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ScriptingPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
-        this.getCommand("js").setExecutor(new ScriptingCommand());
+        this.getCommand("script").setExecutor(new ScriptingCommand());
     }
 }
