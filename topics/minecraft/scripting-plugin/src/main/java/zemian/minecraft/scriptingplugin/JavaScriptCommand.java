@@ -1,4 +1,4 @@
-package zemian.minecraft.javascriptplugin;
+package zemian.minecraft.scriptingplugin;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

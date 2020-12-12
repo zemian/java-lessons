@@ -1,4 +1,4 @@
-package zemian.minecraft.javascriptplugin;
+package zemian.minecraft.scriptingplugin;
 
 //https://github.com/mozilla/rhino/blob/master/examples/RunScript.java
 /* -*- Mode: java; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 4 -*-
