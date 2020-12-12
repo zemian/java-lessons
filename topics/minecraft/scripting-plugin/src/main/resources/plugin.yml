@@ -1,8 +1,8 @@
-name: JavaScriptPlugin
+name: ScriptingPlugin
 version: 1.0
 api-version: 1.15
-main: zemian.minecraft.javascriptplugin.JavaScriptPlugin
+main: zemian.minecraft.scriptingplugin.ScriptingPlugin
 
 commands:
-  js:
-    description: Use JavaScript for MC plugin dev.
+  script:
+    description: Use Java ScriptingEngine for MC plugin dev.
