@@ -26,36 +26,9 @@ The script will have access to the following variables bindings in global scope:
 
 These are the parameters passed into the `CommandExecutor.onCommand()` instance method.
 
-## JDK Nashorn ScriptingEngine
+## Java ScriptEngines
 
-JDK 6 - JDK 8 has a built-in JavaScript engine using the Rhino project
-
-* https://docs.oracle.com/javase/7/docs/technotes/tools/index.html#scripting
-* https://docs.oracle.com/javase/7/docs/technotes/tools/share/jrunscript.html
-* https://docs.oracle.com/javase/7/docs/technotes/tools/share/jsdocs/allclasses-noframe.html
-* https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
-* http://mozilla.github.io/rhino/javadoc/index.html
-* https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Shell
-
-JDK 8 to 14 the built-in JavaScript engine has been replaced by Nashorn project. 
-An new command tool `jjs` has been added. 
-Nashorn provides a 100% support of ECMAScript 5.1
-Note that JDK11 is the LTS release.
-* https://docs.oracle.com/en/java/javase/14/scripting/
-* https://docs.oracle.com/en/java/javase/14/nashorn/
-* https://docs.oracle.com/en/java/javase/14/docs/specs/man/jjs.html
-* https://developer.oracle.com/databases/nashorn-javascript-part1.html
-
-Starting JDK 15, Nashorn has been removed from JDK as separate project now.
-Note that the `jrunscript` command is still avaiable in JDK 15, but it's experimental.
-* https://github.com/openjdk/nashorn
-* https://search.maven.org/artifact/org.openjdk.nashorn/nashorn-core/15.0/jar
-* https://mail.openjdk.java.net/pipermail/nashorn-dev/2020-October/007557.html
-* https://docs.oracle.com/en/java/javase/15/docs/specs/man/jrunscript.html
-
-## Other ScriptingEngines
-
-* https://groovy-lang.org/
-* https://www.jruby.org/
-* https://www.jython.org/
-
+* Built-in JDK JavaScript engine: https://docs.oracle.com/en/java/javase/11/scripting/
+* Groovy: https://groovy-lang.org/
+* Ruby: https://www.jruby.org/
+* Python: https://www.jython.org/
