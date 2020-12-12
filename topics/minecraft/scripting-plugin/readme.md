@@ -28,28 +28,31 @@ These are the parameters passed into the `CommandExecutor.onCommand()` instance 
 
 ## JDK Nashorn ScriptingEngine
 
-JDK 6 - JDK 8 has a built-in JavaScript engine using the Rhino project (see below).
+JDK 6 - JDK 8 has a built-in JavaScript engine using the Rhino project
 
-JDK 8 to 14 the built-in JavaScript engine has been replaced by Nashorn project. 
-Ad new command tool `jjs` has been added. Nashorn provides a 100% support of ECMAScript 5.1
-
-Starting JDK 15, Nashorn has been removed from JDK and it will have its own separate 
-package from JDK. If you use JDK 15, you need to enable the pom.xml dependency for Nashorn.
-
-* https://github.com/openjdk/nashorn
-* https://search.maven.org/artifact/org.openjdk.nashorn/nashorn-core/15.0/jar
-* https://mail.openjdk.java.net/pipermail/nashorn-dev/2020-October/007557.html
-* https://docs.oracle.com/en/java/javase/14/scripting/using-java-scripts.html#GUID-AB5FB8B1-AEE4-4ECE-9ECE-06E1A66F0291
-
-
-## Mozilla Rhino ScriptingEngine
-
+* https://docs.oracle.com/javase/7/docs/technotes/tools/index.html#scripting
+* https://docs.oracle.com/javase/7/docs/technotes/tools/share/jrunscript.html
+* https://docs.oracle.com/javase/7/docs/technotes/tools/share/jsdocs/allclasses-noframe.html
 * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino
 * http://mozilla.github.io/rhino/javadoc/index.html
 * https://developer.mozilla.org/en-US/docs/Mozilla/Projects/Rhino/Shell
 
-    java org.mozilla.javascript.tools.shell.Main [options] script-filename-or-url [script-arguments]
+JDK 8 to 14 the built-in JavaScript engine has been replaced by Nashorn project. 
+Ad new command tool `jjs` has been added. Nashorn provides a 100% support of ECMAScript 5.1
+* https://docs.oracle.com/en/java/javase/14/scripting/
+* https://docs.oracle.com/en/java/javase/14/nashorn/
+* https://docs.oracle.com/en/java/javase/14/docs/specs/man/jjs.html
+* https://developer.oracle.com/databases/nashorn-javascript-part1.html
 
-## Apache Groovy ScriptingEngine
+Starting JDK 15, Nashorn has been removed from JDK and it will have its own separate 
+package from JDK. If you use JDK 15, you need to enable the pom.xml dependency for Nashorn. (NOTE: the `jrunscript` command is still avaiable in JDK!)
+* https://github.com/openjdk/nashorn
+* https://search.maven.org/artifact/org.openjdk.nashorn/nashorn-core/15.0/jar
+* https://mail.openjdk.java.net/pipermail/nashorn-dev/2020-October/007557.html
 
-https://groovy-lang.org/
+## Other ScriptingEngines
+
+* https://groovy-lang.org/
+* https://www.jruby.org/
+* https://www.jython.org/
+
