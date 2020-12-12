@@ -13,8 +13,8 @@ There is a readme file in each folder for further instruction.
 Want some more? Here some curated topics that might interest you:
 
 * [MineCraft](topics/minecraft) - Learn how to build Minecraft plugins using Java!
-* [Desktop GUI](topics/swingdesktop) - Learn how to build Desktop & GUI application using Java!
-* [Computer Science & Algorithm](topics/algorithm) - Explore some search & sorting algorithms using Java!
+* [Desktop GUI](commontasks/swingdesktop) - Learn how to build Desktop & GUI application using Java!
+* [Computer Science & Algorithm](commontasks/algorithm) - Explore some search & sorting algorithms using Java!
 * [Design Patterns](topics/designpatterns) - Explore some common design patterns using Java!
 
 ## Install and Setup Java Development Kit (JDK)
