@@ -2,7 +2,7 @@
 
 This project contains notes for teaching and learning Java programming language.
 
-NOTE: All example and source code here are intended for Java version 11 (LTS) or higher.
+NOTE: All examples and source code here are intended for Java version 11 or higher.
 
 ## Install and Setup Java Development Kit (JDK)
 
