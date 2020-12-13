@@ -1,6 +1,6 @@
 # java-lessons
 
-This project contains notes for teaching Java programming language.
+This project contains notes for teaching and learning Java programming language.
 
 NOTE: All example and source code here are intended for Java version 11 (LTS) or higher.
 
