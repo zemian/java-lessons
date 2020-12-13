@@ -21,6 +21,10 @@ See instructions in [here](basic/Hello.java).
   - [Ant Build Tool](ant-hello-java) - Learn how to use Apache Ant build tool
   - [Gradle Build Tool](gradle-hello-java) - Learn how to use Gradle build tool
   
+* Learn how to create web application with Java
+  - [SparkJava Webapp](spark-webapp) - Learn to create easy web application with SparkJava framework.
+  - [SpringBoot Webapp](spring-webapp) - Learn to create full features web application with Spring framework.
+  
 Want some more? Here some curated topics that might interest you:
 
 * [MineCraft](minecraft) - Learn how to build Minecraft plugins using Java!g Java!
