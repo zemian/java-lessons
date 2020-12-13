@@ -2,6 +2,10 @@
 
 This project is generated from https://start.spring.io/
 
+To run this project:
+
+    mvn spring-boot:run
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
