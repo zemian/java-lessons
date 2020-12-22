@@ -18,6 +18,8 @@ basic/src/**/*.class
 basic/src/*.jar
 basic/target/
 basic/build/
+basic/gradle/
+basic/gradlew*
 
 temp/
 /commontasks/scripts/test.*
