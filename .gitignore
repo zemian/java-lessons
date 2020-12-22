@@ -18,3 +18,4 @@ basic/**/*.class
 basic/*.jar
 
 temp/
+/commontasks/scripts/test.*
