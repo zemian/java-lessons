@@ -35,14 +35,16 @@ These are the parameters passed into the `CommandExecutor.onCommand()` instance 
 
 ## How to Setup Groovy
 
-To use Groovy, you need the groovy and groovy-jsr223 dependencies. 
+To use Groovy, you need the groovy and groovy-jsr223 dependencies, and use "maven-shade-plugin"
+to create one big fat jar for deployment into MC server.
 
-MC plugins dependencies can be package as big fat jar, but there is problem loading jsr223 
-for ScriptEngine discovery. An alternative way to setup plugin dependencies is to 
-simply add it to the MC server classpath in a startup script.
-
-For example:
+An alternative way to setup plugin dependencies is to simply add it to the MC server classpath in a 
+startup script. For example:
 
 ```
 java -cp 'groovy.jar:groovy-jsr223.jar;spigot.jar' org.bukkit.craftbukkit.Main --nogui
 ```
+
+But this will create classloading problems since the plugin classloader is different than 
+the system, and you will not able to see the plugin classes. A solution to this
+is to use GroovyShell instead of ScriptingEngine.
