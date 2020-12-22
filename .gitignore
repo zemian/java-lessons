@@ -13,9 +13,10 @@ build/
 .project
 .classpath
 
-basic/*.class
-basic/**/*.class
-basic/*.jar
+basic/src/*.class
+basic/src/**/*.class
+basic/src/*.jar
+basic/target/
 
 temp/
 /commontasks/scripts/test.*

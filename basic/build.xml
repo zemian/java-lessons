@@ -5,7 +5,7 @@ A build script to compile all *.java files in current directory
 <project name="basic" default="build" basedir=".">
     <property name="project.version" value="1.0"/>
     <property name="jdk.version" value="11"/>
-    <property name="src" location="${basedir}"/>
+    <property name="src" location="${basedir}/src"/>
     <property name="src.main.java" location="${src}"/>
     <property name="src.main.resources" location="${src}"/>
     <property name="src.test.java" location="${src}"/>
@@ -46,9 +46,13 @@ A build script to compile all *.java files in current directory
 
     <target name="clean" description="clean up">
         <delete dir="${target}"/>
-        <!-- Remove .class files and jar from root directory -->
-        <delete dir="${basedir}" includes="**/*.class"/>
-        <delete dir="${basedir}" includes="**/*.jar"/>
+
+        <!-- Extra cleanup:
+        Remove .class files and jar from src directory, since the instructions on command line
+        leaves these temp files there.
+        -->
+        <delete dir="${src}" includes="**/*.class"/>
+        <delete dir="${src}" includes="**/*.jar"/>
     </target>
 
     <target name="compile" depends="init" description="Compile main source files">

@@ -32,7 +32,7 @@ Exercise:
 // 4. Compile and Run Hello program
 //
 //      # To compile it
-//      cd basic
+//      cd basic/src
 //      javac Hello.java
 //
 //      # To run it
