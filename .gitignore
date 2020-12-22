@@ -17,6 +17,7 @@ basic/src/*.class
 basic/src/**/*.class
 basic/src/*.jar
 basic/target/
+basic/build/
 
 temp/
 /commontasks/scripts/test.*
