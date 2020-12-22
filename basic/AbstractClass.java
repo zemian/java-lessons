@@ -5,6 +5,14 @@ Main focus:
 - You can not create new instance with abstract class
 - All methods must be provided by subclass
 - Abstract class can hold member properties
+
+Exercises:
+- Create a base class called Player and provide the following:
+    * int speed
+    * abstract move(int direction)
+- Create a concrete class called Player1 to extends Player with speed = 10
+- Create a concrete class called Player2 to extends Player with speed = 99
+
  */
 public class AbstractClass {
     public static void main(String[] args) {

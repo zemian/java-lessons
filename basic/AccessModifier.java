@@ -14,6 +14,13 @@ Further study:
 - https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
 - Review how package work again and see how access modifier affects it
 - Learn about "default" access modifier
+
+Exercises:
+- How to create an immutable class?
+    - Create a Class with 2 private members:
+        * String name
+        * int value
+    - Provide only getters and NO setters.
  */
 
 import accessmodifiers.*;
