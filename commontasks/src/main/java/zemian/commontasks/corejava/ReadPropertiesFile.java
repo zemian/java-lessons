@@ -6,7 +6,7 @@ import java.util.Properties;
 
 public class ReadPropertiesFile {
     public static void main(String[] args) throws Exception {
-        String file = "commontasks/config.properties";
+        String file = "commontasks/src/main/resources/zemian/commontasks/corejava/config.properties";
         Properties props = new Properties();
         try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
             props.load(reader);
