@@ -32,3 +32,17 @@ These are the parameters passed into the `CommandExecutor.onCommand()` instance 
 * Groovy: https://groovy-lang.org/
 * Ruby: https://www.jruby.org/
 * Python: https://www.jython.org/
+
+## How to Setup Groovy
+
+To use Groovy, you need the groovy and groovy-jsr223 dependencies. 
+
+MC plugins dependencies can be package as big fat jar, but there is problem loading jsr223 
+for ScriptEngine discovery. An alternative way to setup plugin dependencies is to 
+simply add it to the MC server classpath in a startup script.
+
+For example:
+
+```
+java -cp 'groovy.jar:groovy-jsr223.jar;spigot.jar' org.bukkit.craftbukkit.Main --nogui
+```

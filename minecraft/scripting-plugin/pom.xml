@@ -42,27 +42,45 @@
             <artifactId>groovy</artifactId>
             <version>3.0.6</version>
         </dependency>
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-jsr223</artifactId>
+            <version>3.0.6</version>
+        </dependency>
         -->
     </dependencies>
 
     <build>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.2.4</version>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
                 <configuration>
-                    <outputFile>${spigotmc.home}/plugins/${project.artifactId}-${project.version}.jar</outputFile>
+                    <outputDirectory>${spigotmc.home}/plugins</outputDirectory>
                 </configuration>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>shade</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
         </plugins>
+
+        <!-- Use this plugin if you want to create a fat jar that includes all dependencies -->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.apache.maven.plugins</groupId>-->
+<!--                <artifactId>maven-shade-plugin</artifactId>-->
+<!--                <version>3.2.4</version>-->
+<!--                <configuration>-->
+<!--                    <outputFile>${spigotmc.home}/plugins/${project.artifactId}-${project.version}.jar</outputFile>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>package</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>shade</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
     </build>
 </project>

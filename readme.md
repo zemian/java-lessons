@@ -1,3 +1,8 @@
+TODO:
+
+- How to create manifest in jar (How java -jar works). How to do it in Maven jar plugin
+- How to debug and see MC classloader works. Breakpoint in Plugin class?
+
 # java-lessons
 
 This project contains notes for teaching and learning Java programming language.
