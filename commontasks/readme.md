@@ -3,7 +3,7 @@ https://github.com/zemian/learn-java/tree/master/java-starter/src/main/java/zemi
 
 ## Learning Path
 
-Lang Basic
+### Core Java
 
 * [StringExamples](StringExamples.java)
 
@@ -17,3 +17,20 @@ File/Dir IO
 System IO
 
 * [SystemCall](SystemCall.java)
+
+### Design Patterns
+* Factory
+* Observer
+* Producer/Consumer
+* Singleton
+
+### Algorithm
+* BinarySearch
+* BubbleSort
+* QuickSort
+
+### Desktop Application
+* Swing
+
+### Misc
+* Map2Object
