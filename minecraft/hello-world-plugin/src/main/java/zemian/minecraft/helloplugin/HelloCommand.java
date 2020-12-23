@@ -9,11 +9,11 @@ import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class HelloCommand implements CommandExecutor {
-    Logger logger = Logger.getLogger(HelloCommand.class.getName());
+    public static Logger LOG = Logger.getLogger(HelloCommand.class.getName());
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        logger.info("sender=" + sender + ", command=" + command + ", label=" + label + ", args=" + Arrays.toString(args));
+        LOG.info("sender=" + sender + ", command=" + command + ", label=" + label + ", args=" + Arrays.toString(args));
 
         // In case you want to process multiple commands per plugin
         if (command.getName().equals("hello")) {
