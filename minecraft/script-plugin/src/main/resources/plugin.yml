@@ -1,7 +1,7 @@
 name: ScriptingPlugin
 version: 1.0
 api-version: 1.15
-main: zemian.minecraft.scriptingplugin.ScriptingPlugin
+main: zemian.minecraft.scriptplugin.GroovyScriptPlugin
 
 commands:
   script:

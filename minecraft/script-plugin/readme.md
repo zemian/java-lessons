@@ -11,20 +11,17 @@ How to get started:
 1. Build this plugin jar and deploy into Minecraft plugin folders. 
    (If you want to use external ScriptingEngine such as Groovy, enable the pom.xml dependency and
    then build and deploy the "uber" or "fat" jar).
-2. Enter MC command `script /path/to/script.extension` to execute it.
+2. Enter MC command `script` to execute it.
 
-The `/path/to/script.extension` value is optional and if not given, it will use `$HOME/mc.js`.
-The file `extension` is also used to initialize the Java ScriptingEngine. For example you.
-may use `mc.groovy` if you decide to change the ScriptingEngine.
+The default script is `scripts/plugin.groovy` where MC server starts, and you may change it 
+using system property: `scriptPlugin`.
 
-The script will have access to the following variables bindings in global scope:
+The script will have access to `scriptPlugin` variable, which is the Java instance for the plugin. This object
+all the information to the MC. From the script, you should return an instance of `ScriptPlugin` object.
 
-* `sender`
-* `command`
-* `label`
-* `strings`
+Example of MC run:
 
-These are the parameters passed into the `CommandExecutor.onCommand()` instance method.
+   
 
 ## Java ScriptEngines
 
