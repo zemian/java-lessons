@@ -1,4 +1,4 @@
-name: ScriptingPlugin
+name: GroovyScriptPlugin
 version: 1.0
 api-version: 1.15
 main: zemian.minecraft.scriptplugin.GroovyScriptPlugin
@@ -6,3 +6,9 @@ main: zemian.minecraft.scriptplugin.GroovyScriptPlugin
 commands:
   script:
     description: Use Java ScriptingEngine for MC plugin dev.
+  test:
+    description: For testing
+  test2:
+    description: For testing
+  test3:
+    description: For testing

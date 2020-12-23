@@ -18,6 +18,10 @@ public class GroovyScriptCommand implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         LOG.info("sender=" + sender + ", command=" + command + ", label=" + label + ", args=" + Arrays.toString(args));
+        // This command will reload the scriptPlugin, but before that, we need to call onDisable() first.
+        groovyScriptPlugin.getScriptPlugin().onDisable();
+
+        // Now load script - it can be a new script from args!
         String script = GroovyScriptPlugin.DEFAULT_SCRIPT;
         if (args.length > 0) {
             script = args[0];
