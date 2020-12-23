@@ -3,7 +3,6 @@ package zemian.minecraft.scriptplugin;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-import org.bukkit.entity.Player;
 
 import java.util.Arrays;
 import java.util.logging.Logger;
@@ -25,7 +24,7 @@ public class GroovyScriptCommand implements CommandExecutor {
         }
         LOG.info("Reloading groovyScriptPlugin with " + script);
         groovyScriptPlugin.initPluginDelegate(script);
-        groovyScriptPlugin.onEnable();
+        groovyScriptPlugin.getScriptPlugin().onEnable();
         return true;
     }
 }

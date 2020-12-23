@@ -6,6 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class ScriptPlugin {
     protected JavaPlugin javaPlugin;
 
+    public ScriptPlugin() {}
     public ScriptPlugin(JavaPlugin javaPlugin) {
         this.javaPlugin = javaPlugin;
     }
