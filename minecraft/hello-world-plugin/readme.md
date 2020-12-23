@@ -15,3 +15,7 @@ To build and install this plugin, you need the following:
 NOTE: If you want to build the jar directly into the Spigot server, run this:
 
     mvn package -Dspigotmc.home=/path/to/spigotmc-1.15
+
+EXtra Reading:
+
+* https://bukkit.gamepedia.com/Plugin_Tutorial
