@@ -19,3 +19,4 @@ NOTE: If you want to build the jar directly into the Spigot server, run this:
 EXtra Reading:
 
 * https://bukkit.gamepedia.com/Plugin_Tutorial
+* https://www.spigotmc.org/threads/enable-debug-logging-to-console.456250/ (How MC Loggers work)
