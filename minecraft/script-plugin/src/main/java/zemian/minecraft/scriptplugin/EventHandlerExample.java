@@ -4,12 +4,13 @@ import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 
 import java.util.logging.Logger;
 
 // Source: https://bukkit.gamepedia.com/Plugin_Tutorial
-public class EventHandlerExample {
+public class EventHandlerExample implements Listener {
     Logger logger = Logger.getLogger(EventHandlerExample.class.getName());
 
     @EventHandler

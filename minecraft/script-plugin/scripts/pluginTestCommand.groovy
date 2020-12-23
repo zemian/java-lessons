@@ -28,8 +28,8 @@ class Test3Command implements CommandExecutor {
 }
 
 
-class MyScriptPlugin extends ScriptPlugin {
-    MyScriptPlugin(JavaPlugin javaPlugin) {
+class MyTestScriptPlugin extends ScriptPlugin {
+    MyTestScriptPlugin(JavaPlugin javaPlugin) {
         super(javaPlugin)
     }
 
@@ -39,12 +39,7 @@ class MyScriptPlugin extends ScriptPlugin {
         this.javaPlugin.getCommand("test2").setExecutor(new Test2Command());
         this.javaPlugin.getCommand("test3").setExecutor(new Test3Command());
     }
-
-    @Override
-    void onDisable() {
-        System.out.println("Groovy plugin on disable");
-    }
 }
 
 // scriptPlugin is a global variable
-return new MyScriptPlugin(javaPlugin);
+return new MyTestScriptPlugin(javaPlugin);

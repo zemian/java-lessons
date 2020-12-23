@@ -8,12 +8,7 @@ class MyScriptPlugin extends ScriptPlugin {
 
     @Override
     void onEnable() {
-        System.out.println("Groovy plugin on enable");
-    }
-
-    @Override
-    void onDisable() {
-        System.out.println("Groovy plugin on disable");
+        System.out.println("This script plugin is ready to do work!");
     }
 }
 
