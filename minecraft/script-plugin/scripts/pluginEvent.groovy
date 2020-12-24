@@ -1,5 +1,7 @@
 import org.bukkit.event.EventHandler
+import org.bukkit.event.HandlerList
 import org.bukkit.event.Listener
+import org.bukkit.event.player.PlayerInteractEvent
 import org.bukkit.event.player.PlayerMoveEvent
 import org.bukkit.plugin.java.JavaPlugin
 import zemian.minecraft.scriptplugin.ScriptPlugin
@@ -19,6 +21,13 @@ class MyEventScriptPlugin extends ScriptPlugin {
     @Override
     void onEnable() {
         javaPlugin.getServer().getPluginManager().registerEvents(new EventHandlerExample(), javaPlugin);
+    }
+
+    @Override
+    void onDisable() {
+        //PlayerInteractEvent.getHandlerList().unregister(javaPlugin);
+        // Or unregister all
+        HandlerList.unregisterAll(javaPlugin);
     }
 }
 
