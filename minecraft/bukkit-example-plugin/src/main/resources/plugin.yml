@@ -4,5 +4,5 @@ api-version: 1.15
 main: zemian.minecraft.bukkitexampleplugin.broadcast.ExamplePlugin
 
 commands:
-  hello:
-    description: My First Hello World Minecraft Plugin.
+  test:
+    description: Test a command

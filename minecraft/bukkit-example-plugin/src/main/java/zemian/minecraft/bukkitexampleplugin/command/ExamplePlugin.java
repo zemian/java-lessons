@@ -9,7 +9,7 @@ public class ExamplePlugin extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        LOG.info("Setup 'hello' command executor");
-        this.getCommand("hello").setExecutor(new ExampleCommand());
+        LOG.info("Setup test command executor");
+        this.getCommand("test").setExecutor(new ExampleCommand());
     }
 }

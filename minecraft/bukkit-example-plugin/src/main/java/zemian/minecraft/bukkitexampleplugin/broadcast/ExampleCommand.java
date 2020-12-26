@@ -1,10 +1,10 @@
-package zemian.minecraft.bukkitexampleplugin.command;
+package zemian.minecraft.bukkitexampleplugin.broadcast;
 
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
-
-import java.util.Arrays;
 import java.util.logging.Logger;
 
 public class ExampleCommand implements CommandExecutor {
@@ -12,7 +12,8 @@ public class ExampleCommand implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        LOG.info("sender=" + sender + ", command=" + command + ", label=" + label + ", args=" + Arrays.toString(args));
+        Bukkit.broadcastMessage("This is just an example plugin.");
+        Bukkit.broadcastMessage(ChatColor.GREEN + "Plugin is ready!");
         return true;
     }
 }
