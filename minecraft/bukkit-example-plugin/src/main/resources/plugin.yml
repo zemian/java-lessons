@@ -1,7 +1,7 @@
 name: BukkitExamplePlugin
 version: 1.0
 api-version: 1.15
-main: zemian.minecraft.bukkitexampleplugin.BukkitExamplePlugin
+main: zemian.minecraft.bukkitexampleplugin.hello.HelloPlugin
 
 commands:
   hello:

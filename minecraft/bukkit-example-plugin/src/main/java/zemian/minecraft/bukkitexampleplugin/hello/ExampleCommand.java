@@ -1,4 +1,4 @@
-package zemian.minecraft.bukkitexampleplugin;
+package zemian.minecraft.bukkitexampleplugin.hello;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -8,8 +8,8 @@ import org.bukkit.entity.Player;
 import java.util.Arrays;
 import java.util.logging.Logger;
 
-public class HelloCommand implements CommandExecutor {
-    public static Logger LOG = Logger.getLogger(HelloCommand.class.getName());
+public class ExampleCommand implements CommandExecutor {
+    public static Logger LOG = Logger.getLogger(ExampleCommand.class.getName());
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
