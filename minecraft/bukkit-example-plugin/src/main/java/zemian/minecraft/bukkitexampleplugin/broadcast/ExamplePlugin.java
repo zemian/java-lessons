@@ -11,6 +11,7 @@ public class ExamplePlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         LOG.info("Setup test command executor");
+        getServer().broadcastMessage("Setup test command executor");
         this.getCommand("test").setExecutor(new ExampleCommand());
     }
 }
