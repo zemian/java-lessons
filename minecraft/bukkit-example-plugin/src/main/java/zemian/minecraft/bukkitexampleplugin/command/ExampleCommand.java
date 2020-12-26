@@ -1,4 +1,4 @@
-package zemian.minecraft.bukkitexampleplugin.hello;
+package zemian.minecraft.bukkitexampleplugin.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

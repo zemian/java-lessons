@@ -1,4 +1,4 @@
-package zemian.minecraft.bukkitexampleplugin.hello;
+package zemian.minecraft.bukkitexampleplugin.command;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -9,14 +9,7 @@ public class ExamplePlugin extends JavaPlugin {
     
     @Override
     public void onEnable() {
-        LOG.info("Enabling HelloWorldPlugin");
-
         LOG.info("Setup 'hello' command executor");
         this.getCommand("hello").setExecutor(new ExampleCommand());
-    }
-
-    @Override
-    public void onDisable() {
-        LOG.info("Disabling HelloWorldPlugin");
     }
 }
