@@ -7,5 +7,7 @@
 ## Useful MC commands for development:
 
 ```
-reload
+stop - stop the server
+reload - reload plugins
+<command> - execute any command your plugin might provide
 ```
