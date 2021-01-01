@@ -1,4 +1,4 @@
-package zemian.commontasks.corejava;
+package zemian.commontasks;
 
 import org.junit.Assert;
 import org.junit.Test;

@@ -1,14 +1,11 @@
 package zemian.commontasks.json;
 
 import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
-import java.lang.reflect.Type;
 import java.util.Date;
 import java.util.List;
-import java.util.Map;
 
 public class MyDataJson {
     public static void main(String[] args) throws Exception {

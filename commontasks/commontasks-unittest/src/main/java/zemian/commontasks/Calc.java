@@ -1,4 +1,4 @@
-package zemian.commontasks.corejava;
+package zemian.commontasks;
 
 public class Calc {
     public int sum(int a, int b) {
