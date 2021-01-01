@@ -1,3 +1,4 @@
+<%@ page isErrorPage="true" %>
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
 
 <h1>Oops!</h1>
 <p>Something went wrong!</p>
+<p><%= exception.getMessage() %></p>
 
 </body>
 </html>
