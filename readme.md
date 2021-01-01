@@ -15,24 +15,15 @@ See instructions in [here](basic/Hello.java).
 
 ## Learning Paths
 
-* [Basic Java Programming](basic) - Learn the basic Java programming language syntax and construct
+* [Basic Java Programming](basic-java) - Learn the basic Java programming language syntax and construct
 * [Common Tasks in Java](commontasks) - Learn how to do some common tasks with the Java language
-  - [Desktop GUI](commontasks/swingdesktop) - Learn how to build Desktop & GUI application using Java!
-  - [Computer Science & Algorithm](commontasks/algorithm) - Explore some search & sorting algorithms using Java!
-  - [Design Patterns](commontasks/designpatterns) - Explore some common design patterns using Java!
-  
-* Learn different Java build tools
-  - [Maven Build Tool](maven-hello-java) - Learn how to use Apache Maven build tool
-  - [Ant Build Tool](ant-hello-java) - Learn how to use Apache Ant build tool
-  - [Gradle Build Tool](gradle-hello-java) - Learn how to use Gradle build tool
-  
-* Learn how to create web application with Java
-  - [SparkJava Webapp](spark-webapp) - Learn to create easy web application with SparkJava framework.
-  - [SpringBoot Webapp](spring-webapp) - Learn to create full features web application with Spring framework.
+* [Learn different Java build tools](buildtools)  
+* [Learn how to write Web Applications](webapps)
   
 Want some more? Here some curated topics that might interest you:
 
 * [MineCraft](minecraft) - Learn how to build Minecraft plugins using Java!g Java!
+
 * Java Ecosystem and Popular Libraries:
   - [Tomcat Web Server](http://tomcat.apache.org/) - A Java based web server that supports Servlet API.
   - [Spring Framework](https://spring.io/) - A popular framework to built application with.
