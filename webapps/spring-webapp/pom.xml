@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>zemian</groupId>
-	<artifactId>spring-webapp</artifactId>
+	<artifactId>webapps-spring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>spring-webapp</name>
