@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>zemian</groupId>
-  <artifactId>webapps-spark</artifactId>
+  <artifactId>spark-webapp</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
