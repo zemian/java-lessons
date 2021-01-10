@@ -19,7 +19,7 @@ Exercise:
  */
 
 //
-// 1. Download and install JDK 11 from https://www.oracle.com/java
+// 1. Download and install JDK 11 from https://jdk.java.net/java-se-ri/11
 //
 // 2. Setup Terminal environment variable with where you installed JDK.
 //    For example: edit ".bashrc" file and add the following at the end:
