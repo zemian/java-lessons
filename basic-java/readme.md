@@ -41,8 +41,10 @@ these lessons, you may want to explore some [Common Tasks](../commontasks) in Ja
 
 	```
 	# To compile it
-	cd basic/src
+	cd basic-java/src/main/java
+
 	javac Hello.java
+	
 	# To run it
 	java Hello
 	```
