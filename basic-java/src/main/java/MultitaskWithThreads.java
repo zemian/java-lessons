@@ -14,6 +14,15 @@ Further study:
 - Explore volatile keyword and compare to synchronized
 - Learn about thread pool
 - Learn more about "java.util.concurrent" package
+
+Excercise:
+- Write a program that has one threads and each should print a number from 1 to 100
+- Write a program that has two threads and each should print a number from 1 to 100
+- Write a program that has eight threads and each should print a number from 1 to 100
+- Write a program that has 32 threads and each should print a number from 1 to 100
+- Check your PC to see how many CPU or Process unit it has. How can Java program run 
+  higher number of Threads than the given amount of Process available? If you are a 
+  CPU designer, how would you solve this problem?
  */
 
 import java.util.Date;

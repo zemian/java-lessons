@@ -8,6 +8,13 @@ Further study:
 - Notice how we created a classes inside our main class (nested or inner classes)
 - Explore how "javac" generate ".class" files on these inner classes.
 - Notice that all code in Java program must be inside one or more classes!
+
+Excercise:
+
+- Write a Class with following functions:
+    * Method "print10Nums" that prints number 1 to 10.
+    * Method "printRangeNums(int min, int max)" that prints number from min to max (both inclusive).
+    * Method "printRandomNums(int min, int max)" that prints one random number between min (inclusive) to max (exclusive).
  */
 public class FunctionsGroupByClass {
     public static void main(String[] args) {

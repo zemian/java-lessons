@@ -13,6 +13,11 @@ Main focus:
 
 Further study:
 - You can invoke method through class object!
+
+Exercise:
+- Write a program to print all the members in a given class.
+- Write a program to print all the methods in a given class.
+- Write a program that takes a class name as string argument and then create a instance and print it.
  */
 
 import packages.Apple;

@@ -11,6 +11,11 @@ for a specific use.
 
 NOTE: It's always recommended to create separate class on its file. Especially for libraries that
 will be given to users as SDK.
+
+Exercise:
+- Create a static inner Class name "MyInnerClass" inside "BigClass" class.
+- Create an instance from MyInnerClass from a main method.
+- Remove static from inner Class name "MyInnerClass" and see what happen?
  */
 
 import innerclass.BigClass;

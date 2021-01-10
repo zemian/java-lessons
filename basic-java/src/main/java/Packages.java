@@ -16,6 +16,12 @@ Further study:
 - Learn about default package "java.lang"
 - Learn about few import built-in JDK packages:
   java.util.*, java.io.*, java.text.*
+
+Exercise:
+- Create a package named "javaexample" and "Hello" class that prints Hello world
+- Create a nested package named "javaexample/morecode" and "HelloAgain" class that prints Hello world
+- How can you import Hello inside your HelloAgain class?
+
  */
 
 //

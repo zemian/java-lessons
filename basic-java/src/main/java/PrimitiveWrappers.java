@@ -11,6 +11,11 @@ Further Study:
 - Always use primitive types instead of wrapper unless you have reason for it
 - Primitive wrapper are used in Collection Types, which you will learn more later
 - It's better NOT to use 'new' keyword on wrapper and use literal autoboxing instead
+
+Excercise:
+- Print all the MIN and MAX constants from Integer, Long, Float, Double and Byte.
+- Write a method to covert String into int
+- Write a method to print a int in binary numbers string.
  */
 public class PrimitiveWrappers {
     public static void main(String[] args) {

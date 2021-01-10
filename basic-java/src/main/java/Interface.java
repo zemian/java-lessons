@@ -13,6 +13,12 @@ Further study:
 - How to safeguard type casting
 - Learn how class inheritance and interface can be mixed
 - Explore existing API document on these class hierarchy structure for ArrayList and HashMap
+
+ExerciseL:
+- Create an interface called Player and have method called "printDescription()"
+- Create an class GoodGuy that implements Player
+- Create an class BadGuy that implements Player
+
  */
 
 import java.util.*;

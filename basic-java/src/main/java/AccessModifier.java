@@ -21,6 +21,10 @@ Exercises:
         * String name
         * int value
     - Provide only getters and NO setters.
+- Create a Foo base class with one private, protected, public and default members.
+    - Then create a sub class Bar that extends Foo
+    - Which members are you able to access inside Bar class?
+    - Create an instant of Bar class in a Demo program, and now which member can you access?
  */
 
 import accessmodifiers.*;

@@ -11,6 +11,15 @@ Main focus:
 - Learn to write type definition with generic
 - Learn about Java reflection and their related classes.
 - There are a lot more to generic - see https://docs.oracle.com/javase/tutorial/java/generics/types.html
+
+Exercise:
+- Create a simple class named Gem.
+- Create a TreassureBox class that holds a List of Gem's.
+    * Create a "add" ad "print" method.
+- Now create two more simple Classes called Book and VideoGame.
+- How can you make TreasureBox class to hold all three types: Gem, Book and VideoGame and not
+  storing 3 seprate list of types? Would your design work if you are to ask add more types
+  to the TreasureBox?
  */
 
 import java.lang.reflect.Array;

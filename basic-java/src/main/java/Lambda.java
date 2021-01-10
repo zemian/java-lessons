@@ -10,6 +10,9 @@ Further study:
 - See https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html
 - Learn about Java Stream https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
 
+Excercise:
+- Create a Lambda that can pass to Thread class constructor.
+- Create a Lambda that reverse sort a list and pass to Collections.sort()
  */
 
 import java.util.*;

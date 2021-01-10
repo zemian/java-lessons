@@ -5,6 +5,18 @@ Main focus:
 - Simple enum that has ordinal id and string constant.
 - Custom enum that we define our own data.
 - You can not extends enum type!
+
+Exercise:
+- Create an enum class of 3 different Minecraft block types.
+- Create an enum class of play card Suite: Diamon, Club, Heart and Spade
+- Create an class named Card that has following:
+    * Suite (enum)
+    * faceValue (2-10, Jack, Queen, King or Ace)
+    * toString method
+- Create a class named Deck that has the following:
+    * List of 52 Card
+    * A method: "shuffe" that randomize teh cards in the list
+    * A method named "dealHand(int numberCards)" and print the numberCards values on Console.
  */
 
 import java.util.*;

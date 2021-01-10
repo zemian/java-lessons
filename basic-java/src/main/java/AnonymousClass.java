@@ -5,6 +5,13 @@ Main focus:
 - You can do this with any class type that you need subclass with.
 - This is often needed when we want to provide a quick instance of an interface.
 - The anonymous sub type assignment statement!
+
+Exercises:
+- Create an anonymous class that implements Runnable and print hello.
+- Create an anonymous class that implements Callable and print hello.
+    * What's the difference between Runnable and Callable?
+- Can you create an anonymous class witin another anonymous class?
+- What .class files does the compiler generate when you creawte an anonymous class?
  */
 
 public class AnonymousClass {

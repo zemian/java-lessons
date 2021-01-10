@@ -9,6 +9,11 @@ Main focus
 Further Study:
 - Uncheck exception is more friendly to use by caller
 - Checked exception is more verbose and explicit
+
+Execercise:
+- Write a Utility Class method that will sleep a given number of seconds. Ensure this method
+  does not use compile time exception (Note: it can throw RuntimeException)
+- Write a Utitlty Class method that print a text file and handle all the possible Exceptions.  
  */
 import java.io.*;
 

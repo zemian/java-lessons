@@ -25,6 +25,20 @@ Further study:
 - Learn about member default value
 - Learn what getter and setter methods are
 - What is polymorphism: https://docs.oracle.com/javase/tutorial/java/IandI/polymorphism.html
+
+Exercise:
+- Create a class nemd "Location" that contains x and y coordinate.
+    * Add getter and setters for x and y
+    * Add toString() to print x and y
+    * Add a method to calculate distance beween this and another Location
+
+- Create a class named "Player" that provide the following, you thik about what types 
+  you should be using for these members:
+    * A score value
+    * A number of life left
+    * A list of friends (other players)
+    * A location position (Location)
+    * A method that takes direction as parameter and then increase/decrease the x or y coordinates
  */
 
 public class ClassTypeDefinition {

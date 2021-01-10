@@ -18,6 +18,11 @@ Further study:
 - Learn to use IDE to export jar file
 - Learn that you can package resource files inside jar
 - Learn how to read resource files from inside a jar programmatically
+
+Excercise:
+- Build a jar that contains all the basic-java classes in this project
+- How can you run a demo exercise from the jar above?
+
  */
 
 //
