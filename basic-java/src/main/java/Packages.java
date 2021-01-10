@@ -3,11 +3,11 @@ Packages - Java namespace
 
 If class can hold functions, then think of package is used to hold classes.
 Java packages use the file system structure to separate and store classes with
-a namespace. See "Lesson06" folder for this lesson package definition used in
-this lesson.
+a namespace.
 
 Main focus:
 - Create package by matching folder structure
+- The package name can be any alphanumber characters. Normally all lowever case and no special characters.
 - Remember to declare package name in definition
 - Follow one class per file pattern
 - Nested packages
@@ -37,7 +37,10 @@ Exercise:
 //   java Packages
 //
 
-import packages.Apple; // Or you can do "lesson06.*" to import all classes
+import packages.Apple; // Note 'packages' is just an example name, it can be anything you want.
+
+// Or you can also import all classes from a package with "*"
+//import packages.*;
 
 // Use import statement to bring in class definitions
 public class Packages {
