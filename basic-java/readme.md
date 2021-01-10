@@ -35,7 +35,7 @@ these lessons, you may want to explore some [Common Tasks](../commontasks) in Ja
 	For Windows OS, you need to modify the System Environment to add JAVA_HOME. Then ensure you add
 	the `JAVA_HOME/bin` to PATH on the very top of the entries list.
 
-3. Verify `which java`, `which javac`, `java -version` and `javac -version` commands are good.
+3. Verify `java -version` and `javac -version` commands are good.
 
 4. Compile and Run Hello program
 
