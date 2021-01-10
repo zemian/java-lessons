@@ -21,7 +21,31 @@ these lessons, you may want to explore some [Common Tasks](../commontasks) in Ja
 
 ## Install and Setup Java Development Kit (JDK)
 
-See instructions in [here](src/main/java/Hello.java).
+1. Download and install JDK 11 from https://jdk.java.net/java-se-ri/11
+
+2. Setup Terminal environment variable with where you installed JDK.
+   
+   	For example on MacOS: edit `$HOME/.bashrc` file and add the following at the end:
+
+   	```
+	export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home
+	export PATH=$JAVA_HOME/bin:$PATH
+	```
+
+	For Windows OS, you need to modify the System Environment to add JAVA_HOME. Then ensure you add
+	the `JAVA_HOME/bin` to PATH on the very top of the entries list.
+
+3. Verify `which java`, `which javac`, `java -version` and `javac -version` commands are good.
+
+4. Compile and Run Hello program
+
+	```
+	# To compile it
+	cd basic/src
+	javac Hello.java
+	# To run it
+	java Hello
+	```
 
 NOTE: Some lessons might have additional compilation steps. See the code comments for more details.
 

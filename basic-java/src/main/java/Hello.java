@@ -1,6 +1,8 @@
 /*
 A classic Hello World program in Java
 
+NOTE: If you need help installing JDK, see the readme file.
+
 Main focus:
 - Basic Java code structure - class match file naming convention.
 - Introducing JDK with javac and java command line
@@ -17,27 +19,6 @@ Exercise:
 2. Find the version of your "java" command in your system
 3. Install/reinstall latest JDK software package.
  */
-
-//
-// 1. Download and install JDK 11 from https://jdk.java.net/java-se-ri/11
-//
-// 2. Setup Terminal environment variable with where you installed JDK.
-//    For example: edit ".bashrc" file and add the following at the end:
-//
-//      export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-11.0.3.jdk/Contents/Home
-//      export PATH=$JAVA_HOME/bin:$PATH
-//
-// 3. Verify "java -version" and "which javac" are expected
-//
-// 4. Compile and Run Hello program
-//
-//      # To compile it
-//      cd basic/src
-//      javac Hello.java
-//
-//      # To run it
-//      java Hello
-//
 public class Hello {
     public static void main(String[] args) {
         System.out.println("Hello World!");
