@@ -11,7 +11,7 @@ NOTE: All examples and source code here are intended for Java version 11 or high
 
 ## Install and Setup Java Development Kit (JDK)
 
-See instructions in [here](basic/Hello.java).
+See instructions in [here](basic-java/readme.md).
 
 ## Learning Paths
 
