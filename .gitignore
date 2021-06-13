@@ -23,3 +23,6 @@ basic/gradlew*
 
 temp/
 /commontasks/scripts/test.*
+
+# Save some IDE config explicitly
+!java*-whats-new/*.iml
