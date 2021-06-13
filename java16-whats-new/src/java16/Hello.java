@@ -2,12 +2,12 @@ package java16;
 
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /**
+ * https://docs.oracle.com/en/java/javase/16/index.html
  * Java16 released on March 2021 (https://en.wikipedia.org/wiki/Java_version_history)
  * https://www.oracle.com/java/technologies/javase/16-relnotes.html#NewFeature
  * https://mkyong.com/java/what-is-new-in-java-16/
