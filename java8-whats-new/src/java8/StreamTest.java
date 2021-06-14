@@ -3,6 +3,7 @@ package java8;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 /**
@@ -25,7 +26,12 @@ public class StreamTest {
         List<String> result = language.collect(Collectors.toList());
         result.forEach(System.out::println);
 
-        // TODO Why this failed?
-        //Arrays.stream(new int[]{3, 2, 1}).map(n -> n * 2).collect(Collectors.toList());
+        // NOTE: You can't pass Collectors.toList() to IntStream, you must use Stream<Integer> instead.
+        //Arrays.stream(new int[]{3, 2, 1}).map(n -> n * 2).collect(Collectors.toList()).forEach(System.out::println);
+        int[] nArray = {3, 2, 1};
+        IntStream nStream = Arrays.stream(nArray);
+        Stream<Integer> nStream2 = Stream.of(3, 2, 1);
+        //nStream.collect(Collectors.toList()); // Error
+        nStream2.collect(Collectors.toList());
     }
 }
